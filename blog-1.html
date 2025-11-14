@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rivindu Ashinsa - Aspiring Machine Learning Engineer | Data Scientist | Computer Science Undergraduate">
+    <meta name="keywords" content="Machine Learning, Data Science, AI, Portfolio, Rivindu Ashinsa">
+    <meta name="author" content="Rivindu Ashinsa">
+    <title>Rivindu Ashinsa | ML Engineer & Data Scientist</title>
+    <link rel="icon" type="image/x-icon" href="/resources/me-removebg-preview.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/style.css"> 
+    <link rel="stylesheet" href="assets/blog-style.css">
+</head>
+<body>
+    <!-- Mobile Menu Toggle Button -->
+    <button class="menu-toggle-blog" id="menuToggle">
+        <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <div class="container">
+        <div class="hero-blog">
+            <h1 class="blog-head">Blog - 1</h1>
+            <h1>How I started with AI</h1>
+
+            <p class="blog-page-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi porro omnis nobis ipsa rem sit harum aperiam, tempore ex minus voluptatibus quisquam, quo rerum facere sed, hic quam at saepe. <br><br>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui minima ipsa vero distinctio, odit perferendis blanditiis accusantium ipsam. Nisi optio eius quidem libero, reiciendis eveniet molestiae! Alias iste itaque earum. <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem. Quisquam, quidem <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem. Quisquam 
+            </p>
+            <div class="back-button">
+                <a href="index.html" class="back-button-text">Back</a>
+            </div>
+        </div>
+
+        <nav class="blog-nav">
+            <h3>Other Blogs</h3>
+            <ul class="blog-nav-list">
+                <li class="blog-nav-item">
+                    <a href="blog-1.html" class="blog-nav-link active">
+                        <span class="blog-number">Blog 1</span>
+                        How I started with AI
+                    </a>
+                </li>
+                <li class="blog-nav-item">
+                    <a href="blog-2.html" class="blog-nav-link">
+                        <span class="blog-number">Blog 2</span>
+                        My journey in Data Science
+                    </a>
+                </li>
+                <li class="blog-nav-item">
+                    <a href="blog-3.html" class="blog-nav-link">
+                        <span class="blog-number">Blog 3</span>
+                        Machine Learning Projects
+                    </a>
+                </li>
+                <li class="blog-nav-item">
+                    <a href="blog-4.html" class="blog-nav-link">
+                        <span class="blog-number">Blog 4</span>
+                        Deep Learning Fundamentals
+                    </a>
+                </li>
+                <li class="blog-nav-item">
+                    <a href="blog-5.html" class="blog-nav-link">
+                        <span class="blog-number">Blog 5</span>
+                        Computer Vision Applications
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <script>
+        // Mobile menu toggle functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const blogNav = document.querySelector('.blog-nav');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        menuToggle.addEventListener('click', () => {
+            blogNav.classList.toggle('active');
+            menuOverlay.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when clicking overlay
+        menuOverlay.addEventListener('click', () => {
+            blogNav.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            menuToggle.classList.remove('active');
+        });
+
+        // Close menu when clicking a link
+        const blogLinks = document.querySelectorAll('.blog-nav-link');
+        blogLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 1024) {
+                    blogNav.classList.remove('active');
+                    menuOverlay.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                }
+            });
+        });
+    </script>
+    <script src="type.js"></script>
+</body>
+</html>
