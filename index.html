@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<!-- SEO metadata -->
 	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta name="description" content="Rivindu Ashinsa | Data Science Intern portfolio." />
-	<meta name="keywords" content="Rivindu Ashinsa, Data Science Intern, Computer Science, Portfolio, Projects" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Rivindu Ashinsa is a Machine Learning Engineer and Data Scientist specializing in AI, deep learning, and predictive analytics. Explore projects, certifications, and achievements." />
+	<meta name="keywords" content="Rivindu Ashinsa, ML Engineer, Data Scientist, Machine Learning, AI Engineer, Sri Lanka" />
 	<meta name="author" content="Rivindu Ashinsa" />
 	<meta name="theme-color" content="#0f172a" />
-	<meta property="og:title" content="Rivindu Ashinsa | Portfolio" />
-	<meta property="og:description" content="Modern minimalist portfolio featuring data science, analytics, and ML work." />
-	<meta property="og:type" content="website" />
-	<meta property="og:image" content="https://via.placeholder.com/1200x630" />
+	<meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
+	<link rel="canonical" href="https://rivindu-ashinsa.github.io/" />
+
+	<!-- Open Graph metadata -->
+	<meta property="og:title" content="Rivindu Ashinsa | ML Engineer & Data Scientist" />
+	<meta property="og:description" content="Machine Learning Engineer specializing in AI and data science. View my portfolio of ML projects and certifications." />
+	<meta property="og:url" content="https://rivindu-ashinsa.github.io/" />
+	<meta property="og:type" content="profile" />
+	<meta property="og:image" content="https://rivindu-ashinsa.github.io/images/rivindu-ashinsa-profile.jpg" />
+	<meta property="profile:first_name" content="Rivindu" />
+	<meta property="profile:last_name" content="Ashinsa" />
+
+	<!-- Twitter Card metadata -->
 	<meta name="twitter:card" content="summary_large_image" />
-	<title>Rivindu Ashinsa | Portfolio</title>
+	<meta name="twitter:title" content="Rivindu Ashinsa | ML Engineer Portfolio" />
+	<meta name="twitter:description" content="Machine Learning Engineer and Data Scientist portfolio" />
+	<meta name="twitter:image" content="https://rivindu-ashinsa.github.io/images/rivindu-ashinsa-profile.jpg" />
+
+	<title>Rivindu Ashinsa | ML Engineer & Data Scientist Portfolio</title>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles.css" />
+
+	<!-- Structured data for Knowledge Graph -->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Rivindu Ashinsa",
+			"url": "https://rivindu-ashinsa.github.io",
+			"image": "https://rivindu-ashinsa.github.io/images/rivindu-ashinsa-profile.jpg",
+			"jobTitle": "ML Engineer & Data Scientist",
+			"worksFor": {
+				"@type": "Organization",
+				"name": "Freelance"
+			},
+			"alumniOf": {
+				"@type": "CollegeOrUniversity",
+				"name": "University of Westminster"
+			},
+			"knowsAbout": ["Machine Learning", "Data Science", "Deep Learning", "TensorFlow", "Python", "Artificial Intelligence"],
+			"description": "Machine Learning Engineer and Data Scientist specializing in AI, deep learning, and predictive analytics",
+			"sameAs": [
+				"https://linkedin.com/in/yourprofile",
+				"https://github.com/rivindu-ashinsa",
+				"https://kaggle.com/yourprofile"
+			]
+		}
+	</script>
+
+	<!-- Google Analytics 4 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag("js", new Date());
+		gtag("config", "G-XXXXXXXXXX");
+	</script>
 </head>
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
@@ -26,14 +76,15 @@
 	<!-- Sticky navigation bar -->
 	<header class="navbar" role="banner">
 		<div class="container nav-inner">
-			<a href="#hero" class="logo" aria-label="Homepage">
+			<a href="#home" class="logo" aria-label="Homepage">
 				<span class="logo-mark">RA</span>
-				<span class="logo-text">Rivindu Ashinsa</span>
+				<span class="logo-text">RA Portfolio</span>
 			</a>
 			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
 				<span></span><span></span><span></span>
 			</button>
-			<nav id="nav-menu" class="nav-menu" aria-label="Primary">
+			<nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+				<a href="#home" class="nav-link">Home</a>
 				<a href="#about" class="nav-link">About</a>
 				<a href="#experience" class="nav-link">Experience</a>
 				<a href="#skills" class="nav-link">Skills</a>
@@ -48,13 +99,13 @@
 
 	<main id="main">
 		<!-- Hero section -->
-		<section id="hero" class="section hero" aria-labelledby="hero-title">
+		<section id="home" class="section hero" aria-label="Hero section">
 			<div class="hero-bg" aria-hidden="true"></div>
 			<div class="container hero-content">
 				<div class="hero-text" data-animate>
-					<p class="eyebrow">Data Science Intern</p>
-					<h1 id="hero-title">Rivindu Ashinsa</h1>
-					<p class="subtitle">Computer Science undergraduate focused on data-driven insights.</p>
+					<p class="eyebrow">Rivindu Ashinsa | ML Engineer &amp; Data Scientist</p>
+					<h1>Rivindu Ashinsa</h1>
+					<p class="subtitle">Machine Learning Engineer &amp; Data Scientist specializing in AI, deep learning, and predictive analytics.</p>
 					<p class="typing" id="typing" aria-live="polite"></p>
 					<div class="hero-meta">
 						<span>Western Province, Sri Lanka</span>
@@ -74,13 +125,14 @@
 		</section>
 
 		<!-- About section -->
-		<section id="about" class="section reveal" aria-labelledby="about-title">
+		<section id="about" class="section reveal" aria-label="About Rivindu Ashinsa">
 			<div class="container about-layout">
 				<div class="about-summary" data-animate>
-					<h2 id="about-title">About Me</h2>
+					<h2>About Rivindu Ashinsa</h2>
 					<p class="lead">
 						I turn messy data into clear, decision-ready insights. My work spans data cleaning, analysis, and visualization with
-						Python and SQL, and I enjoy building reproducible analytics workflows.
+						Python and SQL, and I enjoy building reproducible analytics workflows. Explore the
+						<a href="#projects">featured projects</a> for recent work.
 					</p>
 					<p class="muted">I care about clarity, reproducibility, and insights that help teams act confidently.</p>
 					<ul class="about-values">
@@ -97,12 +149,12 @@
 				</div>
 				<div class="about-side" data-animate>
 					<div class="about-card glass">
-						<img src="assets/imresizer-1735056107797.jpg" alt="Professional headshot" loading="lazy" />
+						<img src="images/rivindu-ashinsa-profile.jpg" alt="Rivindu Ashinsa - ML Engineer" loading="lazy" />
 						<div>
 							<h3>Quick Profile</h3>
 							<ul class="pill-list">
 								<li>Western Province, Sri Lanka</li>
-								<li>Data Science Intern</li>
+								<li>ML Engineer &amp; Data Scientist</li>
 								<li>BSc (Hons) Computer Science</li>
 							</ul>
 						</div>
@@ -152,9 +204,9 @@
 		</section>
 
 		<!-- Skills section -->
-		<section id="skills" class="section reveal" aria-labelledby="skills-title">
+		<section id="skills" class="section reveal" aria-label="Skills and expertise">
 			<div class="container">
-				<h2 id="skills-title">Skills</h2>
+				<h2>Skills &amp; Expertise</h2>
 				<p class="section-intro">Core tools and competencies aligned with data science and analytics workflows.</p>
 				<div class="grid-3" data-stagger>
 					<div class="skill-card glass">
@@ -219,15 +271,18 @@
 		</section>
 
 		<!-- Projects section -->
-		<section id="projects" class="section reveal" aria-labelledby="projects-title">
+		<section id="projects" class="section reveal" aria-label="Featured projects">
 			<div class="container">
 				<div class="section-header">
-					<h2 id="projects-title">Projects</h2>
+					<h2>Rivindu Ashinsa's Projects</h2>
 					<div class="filters" role="tablist" aria-label="Project filters">
 						<button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
 						<button class="filter" data-filter="ds" role="tab" aria-selected="false">Data Science</button>
 						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ML</button>
 					</div>
+				</div>
+				<div class="section-media">
+					<img src="images/rivindu-ashinsa-projects.jpg" alt="Rivindu Ashinsa presenting machine learning projects" loading="lazy" />
 				</div>
 				<div class="grid-3 project-grid" data-stagger>
 					<article class="project-card glass" data-category="ml">
@@ -286,10 +341,13 @@
 		</section>
 
 		<!-- Certifications section -->
-		<section id="certifications" class="section reveal" aria-labelledby="certifications-title">
+		<section id="certifications" class="section reveal" aria-label="Certifications">
 			<div class="container">
-				<h2 id="certifications-title">Certifications</h2>
+				<h2>Rivindu Ashinsa's Certifications</h2>
 				<p class="section-intro">Professional certifications aligned with data analysis, ML, and analytics.</p>
+				<div class="section-media">
+					<img src="images/rivindu-ashinsa-certifications.jpg" alt="Rivindu Ashinsa showcasing certifications" loading="lazy" />
+				</div>
 				<div class="grid-3" data-stagger>
 					<article class="cert-card glass">
 						<h3>Data Scientist Associate</h3>
@@ -360,9 +418,9 @@
 		</section>
 
 		<!-- Blog section -->
-		<section id="blog" class="section reveal" aria-labelledby="blog-title">
+		<section id="blog" class="section reveal" aria-label="Blog">
 			<div class="container">
-				<h2 id="blog-title">Blog</h2>
+				<h2>Blog</h2>
 				<div class="grid-3" data-stagger>
 					<article class="blog-card glass">
 						<span class="badge">Coming Soon</span>
@@ -390,11 +448,11 @@
 		</section>
 
 		<!-- Contact section -->
-		<section id="contact" class="section reveal" aria-labelledby="contact-title">
+		<section id="contact" class="section reveal" aria-label="Contact information">
 			<div class="container contact-layout">
 				<div class="contact-card glass" data-animate>
-					<h2 id="contact-title">Contact</h2>
-					<p>Let’s collaborate on impactful data science and analytics projects.</p>
+					<h2>Get in Touch</h2>
+					<p>Let’s collaborate on impactful data science and analytics projects. See the latest work in the <a href="#projects">projects section</a>.</p>
 					<div class="contact-details">
 						<div>
 							<span class="label">Location</span>
@@ -414,9 +472,24 @@
 						</div>
 					</div>
 					<div class="socials" aria-label="Social media">
-						<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+						<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+						<a href="https://kaggle.com/yourprofile" aria-label="Kaggle" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
 					</div>
+					<div class="social-links" aria-label="Profile links">
+						<a href="https://linkedin.com/in/yourprofile" rel="noopener noreferrer" target="_blank">Rivindu Ashinsa on LinkedIn</a>
+						<a href="https://github.com/rivindu-ashinsa" rel="noopener noreferrer" target="_blank">Rivindu Ashinsa's GitHub</a>
+						<a href="https://kaggle.com/yourprofile" rel="noopener noreferrer" target="_blank">Rivindu Ashinsa on Kaggle</a>
+					</div>
+					<div class="share" aria-label="Share">
+						<span class="label">Share this portfolio</span>
+						<div class="share-buttons">
+							<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frivindu-ashinsa.github.io%2F" rel="noopener noreferrer" target="_blank">Share on LinkedIn</a>
+							<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Frivindu-ashinsa.github.io%2F&text=Rivindu%20Ashinsa%20%7C%20ML%20Engineer%20%26%20Data%20Scientist" rel="noopener noreferrer" target="_blank">Share on X</a>
+							<a href="mailto:?subject=Rivindu%20Ashinsa%20Portfolio&body=https%3A%2F%2Frivindu-ashinsa.github.io%2F" rel="noopener noreferrer" target="_blank">Share via Email</a>
+						</div>
+					</div>
+					<p class="last-updated">Last updated: February 8, 2026</p>
 				</div>
 				<form id="contact-form" class="glass" novalidate>
 					<label>
@@ -441,7 +514,7 @@
 	<!-- Footer -->
 	<footer class="footer">
 		<div class="container footer-inner">
-			<p>© <span id="year"></span> Rivindu Ashinsa. All rights reserved.</p>
+			<p>© 2025 Rivindu Ashinsa. All rights reserved.</p>
 			<div class="footer-links" aria-label="Quick links">
 				<a href="#about">About</a>
 				<a href="#experience">Experience</a>
@@ -449,14 +522,15 @@
 				<a href="#contact">Contact</a>
 			</div>
 			<div class="footer-socials" aria-label="Social links">
-				<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-				<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+				<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
+				<a href="https://kaggle.com/yourprofile" aria-label="Kaggle" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
 			</div>
 			<button class="back-to-top" aria-label="Back to top">↑</button>
 		</div>
 	</footer>
 
-	<script src="scripts/type.js"></script>
-	<script src="script.js"></script>
+	<script src="scripts/type.js" defer></script>
+	<script src="script.js" defer></script>
 </body>
 </html>

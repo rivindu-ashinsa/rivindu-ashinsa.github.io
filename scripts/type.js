@@ -2,7 +2,7 @@
 
 // Typing effect (hero)
 const texts = [
-	"Computer Science undergraduate focused on data cleaning, analysis, and visualization."
+	"Machine Learning Engineer focused on trustworthy AI, deep learning, and predictive analytics."
 ];
 let textIndex = 0;
 let charIndex = 0;
