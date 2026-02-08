@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#111827" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)" />
+  <rect x="160" y="170" width="1280" height="560" rx="26" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.12)" />
+  <rect x="240" y="250" width="380" height="18" rx="9" fill="url(#accent)" />
+  <rect x="240" y="290" width="500" height="12" rx="6" fill="rgba(255,255,255,0.16)" />
+  <rect x="240" y="320" width="420" height="12" rx="6" fill="rgba(255,255,255,0.12)" />
+  <rect x="240" y="350" width="300" height="12" rx="6" fill="rgba(255,255,255,0.12)" />
+  <rect x="900" y="260" width="440" height="320" rx="20" fill="rgba(59,130,246,0.12)" stroke="rgba(59,130,246,0.4)" />
+  <rect x="940" y="300" width="360" height="20" rx="10" fill="rgba(6,182,212,0.7)" />
+  <rect x="940" y="340" width="240" height="20" rx="10" fill="rgba(6,182,212,0.5)" />
+  <rect x="940" y="380" width="300" height="20" rx="10" fill="rgba(6,182,212,0.4)" />
+</svg>

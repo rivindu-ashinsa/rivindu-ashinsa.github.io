@@ -1,460 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rivindu Ashinsa - Aspiring Machine Learning Engineer | Data Scientist | Computer Science Undergraduate">
-    <meta name="keywords" content="Machine Learning, Data Science, AI, Portfolio, Rivindu Ashinsa">
-    <meta name="author" content="Rivindu Ashinsa">
-    <title>Rivindu Ashinsa | ML Engineer & Data Scientist</title>
-    <link rel="icon" type="image/x-icon" href="/resources/me-removebg-preview.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="assets/style.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Rivindu Ashinsa | Data Science Intern portfolio." />
+	<meta name="keywords" content="Rivindu Ashinsa, Data Science Intern, Computer Science, Portfolio, Projects" />
+	<meta name="author" content="Rivindu Ashinsa" />
+	<meta name="theme-color" content="#0f172a" />
+	<meta property="og:title" content="Rivindu Ashinsa | Portfolio" />
+	<meta property="og:description" content="Modern minimalist portfolio featuring data science, analytics, and ML work." />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://via.placeholder.com/1200x630" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<title>Rivindu Ashinsa | Portfolio</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <button class="menu-toggle" onclick="toggleMenu()">
-        <i class="fas fa-bars"></i>
-    </button>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-    <nav class="sidebar" id="sidebar">
-        <div class="logo">
-            <h1>Rivindu Ashinsa</h1>
-            <p>ML Engineer & Data Scientist</p>
-        </div>
-        <ul class="nav-menu">
-            <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
-            <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
-            <li><a href="#projects" class="nav-link"><i class="fas fa-diagram-project"></i> Projects</a></li>
-            <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
-            <li><a href="#achievements" class="nav-link"><i class="fas fa-trophy"></i> Achievements</a></li>
-            <li><a href="#blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a></li>
-            <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
+	<!-- Sticky navigation bar -->
+	<header class="navbar" role="banner">
+		<div class="container nav-inner">
+			<a href="#hero" class="logo" aria-label="Homepage">
+				<span class="logo-mark">RA</span>
+				<span class="logo-text">Rivindu Ashinsa</span>
+			</a>
+			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+				<span></span><span></span><span></span>
+			</button>
+			<nav id="nav-menu" class="nav-menu" aria-label="Primary">
+				<a href="#about" class="nav-link">About</a>
+				<a href="#experience" class="nav-link">Experience</a>
+				<a href="#skills" class="nav-link">Skills</a>
+				<a href="#projects" class="nav-link">Projects</a>
+				<a href="#certifications" class="nav-link">Certifications</a>
+				<a href="#achievements" class="nav-link">Achievements</a>
+				<a href="#blog" class="nav-link">Blog</a>
+				<a href="#contact" class="nav-link">Contact</a>
+			</nav>
+		</div>
+	</header>
 
-    <main class="main-content">
-        <section id="home">
-            <div class="container">
-                <div class="hero-content">
-                    <h1>Hi, I'm Rivindu Ashinsa</h1>
-                    <p class="hero-subtitle">
-                        <span class="typing-effect" id="typing"></span>
-                    </p>
-                    <p class="hero-description">
-                        I'm a passionate learner who thrives at the intersection of data, code, and intelligence. 
-                        I love exploring how machine learning and AI can solve real-world challenges through innovative data-driven solutions.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> View Projects
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-paper-plane"></i> Get in Touch
-                        </a>
-                        <a href="resume.pdf" class="btn btn-secondary" download>
-                            <i class="fas fa-download"></i> Download CV
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+	<main id="main">
+		<!-- Hero section -->
+		<section id="hero" class="section hero" aria-labelledby="hero-title">
+			<div class="hero-bg" aria-hidden="true"></div>
+			<div class="container hero-content">
+				<div class="hero-text" data-animate>
+					<p class="eyebrow">Data Science Intern</p>
+					<h1 id="hero-title">Rivindu Ashinsa</h1>
+					<p class="subtitle">Computer Science undergraduate focused on data-driven insights.</p>
+					<p class="typing" id="typing" aria-live="polite"></p>
+					<div class="hero-meta">
+						<span>Western Province, Sri Lanka</span>
+						<span>Python • SQL • Analytics</span>
+						<span>Open to internships</span>
+					</div>
+					<div class="cta-group">
+						<a href="#projects" class="btn primary">View Projects</a>
+						<a href="#contact" class="btn secondary">Get in Touch</a>
+						<a href="resume/RivinuAshinsaResumeDataScienceOptimized" class="btn ghost" download>Download CV</a>
+					</div>
+				</div>
+				<div class="hero-visual" aria-hidden="true">
+					<div class="grid-shine"></div>
+				</div>
+			</div>
+		</section>
 
-        <section id="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-grid">
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="about-content">
-                        <h3>My Journey</h3>
-                        <p>
-                            I'm a passionate learner who thrives at the intersection of data, code, and intelligence. 
-                            I love exploring how machine learning and AI can solve real-world challenges through innovative 
-                            data-driven solutions. My journey in technology began with a curiosity about how computers think, 
-                            and has evolved into a deep commitment to mastering the art and science of artificial intelligence.
-                        </p>
-                        
-                        <div class="education-list">
-                            <div class="education-item">
-                                <h4>University of Westminster</h4>
-                                <p>BSc (Hons) Computer Science</p>
-                            </div>
-                            
-                            <div class="education-item">
-                                <h4>Informatics Institute of Technology (IIT), Sri Lanka</h4>
-                                <p>Foundation in Higher Education — Distinction Pass</p>
-                            </div>
-                            
-                            <div class="education-item">
-                                <h4>GCE O/Levels</h4>
-                                <p>9 A's — Academic Excellence</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- About section -->
+		<section id="about" class="section reveal" aria-labelledby="about-title">
+			<div class="container about-layout">
+				<div class="about-summary" data-animate>
+					<h2 id="about-title">About Me</h2>
+					<p class="lead">
+						I turn messy data into clear, decision-ready insights. My work spans data cleaning, analysis, and visualization with
+						Python and SQL, and I enjoy building reproducible analytics workflows.
+					</p>
+					<p class="muted">I care about clarity, reproducibility, and insights that help teams act confidently.</p>
+					<ul class="about-values">
+						<li>Clear reporting with actionable takeaways</li>
+						<li>Well-documented, repeatable analysis</li>
+						<li>Clean datasets that enable reliable decisions</li>
+					</ul>
+					<ul class="about-tags">
+						<li>Data Cleaning</li>
+						<li>Exploratory Analysis</li>
+						<li>Visualization</li>
+						<li>Statistical Methods</li>
+					</ul>
+				</div>
+				<div class="about-side" data-animate>
+					<div class="about-card glass">
+						<img src="assets/imresizer-1735056107797.jpg" alt="Professional headshot" loading="lazy" />
+						<div>
+							<h3>Quick Profile</h3>
+							<ul class="pill-list">
+								<li>Western Province, Sri Lanka</li>
+								<li>Data Science Intern</li>
+								<li>BSc (Hons) Computer Science</li>
+							</ul>
+						</div>
+					</div>
+					<div class="education-card glass">
+						<h3>Education</h3>
+						<div class="education-item">
+							<span class="time">Sep 2024 – Jun 2027 (Expected)</span>
+							<h4>BSc (Hons) Computer Science</h4>
+							<p>University of Westminster, United Kingdom.</p>
+						</div>
+						<div class="education-item">
+							<span class="time">Sep 2023 – May 2024</span>
+							<h4>Foundation in Information Technology</h4>
+							<p>Informatics Institute of Technology (IIT), Sri Lanka.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <section id="skills">
-            <div class="container">
-                <h2 class="section-title">Skills & Expertise</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-code"></i> Programming Languages</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">SQL</span>
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS</span>
-                        </div>
-                    </div>
+		<!-- Experience section -->
+		<section id="experience" class="section reveal" aria-labelledby="experience-title">
+			<div class="container">
+				<h2 id="experience-title">Relevant Experience</h2>
+				<div class="grid-3" data-stagger>
+					<article class="experience-card glass">
+						<span class="experience-meta">2025 – Present • University of Westminster (CognivusLabs)</span>
+						<h3>Data Scientist – SDGP</h3>
+						<p>Biomedical signal processing, clinical time-series analysis, and automated data pipelines.</p>
+						<div class="tags"><span>Python</span><span>SciPy</span><span>Time Series</span></div>
+					</article>
+					<article class="experience-card glass">
+						<span class="experience-meta">2025 • XPredators Research Team</span>
+						<h3>Data Analyst</h3>
+						<p>EDA, statistical testing, and visualization to uncover health risk indicators.</p>
+						<div class="tags"><span>Pandas</span><span>SQL</span><span>Seaborn</span></div>
+					</article>
+					<article class="experience-card glass">
+						<span class="experience-meta">2025 • Personal Research</span>
+						<h3>Data Analyst – Heart Disease Prediction</h3>
+						<p>Data quality checks and biomarker discovery from 1,000+ patient records.</p>
+						<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
+					</article>
+				</div>
+			</div>
+		</section>
 
-                    <div class="skill-category">
-                        <h3><i class="fas fa-toolbox"></i> Frameworks & Tools</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Power BI</span>
-                        </div>
-                    </div>
+		<!-- Skills section -->
+		<section id="skills" class="section reveal" aria-labelledby="skills-title">
+			<div class="container">
+				<h2 id="skills-title">Skills</h2>
+				<p class="section-intro">Core tools and competencies aligned with data science and analytics workflows.</p>
+				<div class="grid-3" data-stagger>
+					<div class="skill-card glass">
+						<h3>Programming Languages</h3>
+						<ul class="skill-list">
+							<li>Python</li>
+							<li>SQL (MySQL, MariaDB)</li>
+							<li>R</li>
+							<li>Java</li>
+						</ul>
+					</div>
+					<div class="skill-card glass">
+						<h3>Data Analysis &amp; Cleaning</h3>
+						<ul class="skill-list">
+							<li>Pandas</li>
+							<li>NumPy</li>
+							<li>SciPy</li>
+							<li>Feature Engineering</li>
+						</ul>
+					</div>
+					<div class="skill-card glass">
+						<h3>Visualization &amp; Reporting</h3>
+						<ul class="skill-list">
+							<li>Matplotlib</li>
+							<li>Seaborn</li>
+							<li>Power BI</li>
+							<li>Dashboard Creation</li>
+						</ul>
+					</div>
+					<div class="skill-card glass">
+						<h3>Machine Learning Tools</h3>
+						<ul class="skill-list">
+							<li>scikit-learn</li>
+							<li>TensorFlow</li>
+							<li>Keras</li>
+							<li>XGBoost</li>
+						</ul>
+					</div>
+					<div class="skill-card glass">
+						<h3>Development Tools</h3>
+						<ul class="skill-list">
+							<li>Git</li>
+							<li>GitHub</li>
+							<li>Jupyter Notebook</li>
+							<li>VS Code</li>
+							<li>Streamlit</li>
+							<li>Linux</li>
+						</ul>
+					</div>
+					<div class="skill-card glass">
+						<h3>Key Competencies</h3>
+						<ul class="skill-list">
+							<li>Data Cleaning</li>
+							<li>Analytical Thinking</li>
+							<li>Data Visualization</li>
+							<li>Statistical Methods</li>
+							<li>Decision Support</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                    <div class="skill-category">
-                        <h3><i class="fas fa-brain"></i> Core Areas</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Data Science</span>
-                            <span class="skill-tag">Machine Learning</span>
-                            <span class="skill-tag">Deep Learning</span>
-                            <span class="skill-tag">Data Analysis</span>
-                            <span class="skill-tag">Data Visualization</span>
-                        </div>
-                    </div>
+		<!-- Projects section -->
+		<section id="projects" class="section reveal" aria-labelledby="projects-title">
+			<div class="container">
+				<div class="section-header">
+					<h2 id="projects-title">Projects</h2>
+					<div class="filters" role="tablist" aria-label="Project filters">
+						<button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+						<button class="filter" data-filter="ds" role="tab" aria-selected="false">Data Science</button>
+						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ML</button>
+					</div>
+				</div>
+				<div class="grid-3 project-grid" data-stagger>
+					<article class="project-card glass" data-category="ml">
+						<div class="project-media">
+							<img src="assets/projects/project-repodigest.svg" alt="RepoDigest" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">ML • GenAI</span>
+							<h3>RepoDigest – AI-Powered Code Analysis</h3>
+							<p>LangGraph + GenAI app to analyze 500+ repositories and generate structured insights.</p>
+							<div class="tags"><span>Python</span><span>LangGraph</span><span>OpenAI API</span></div>
+							<div class="links">
+								<a href="#" aria-label="GitHub">GitHub</a>
+								<a href="#" aria-label="Demo">Demo</a>
+							</div>
+						</div>
+					</article>
+					<article class="project-card glass" data-category="ds">
+						<div class="project-media">
+							<img src="assets/projects/project-biomedical.svg" alt="CognivusLabs Biomedical Analytics" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">Data Science</span>
+							<h3>CognivusLabs Biomedical Analytics</h3>
+							<p>Clinical time-series analysis and automated data pipelines.</p>
+							<div class="tags"><span>Python</span><span>SciPy</span><span>Time Series</span></div>
+							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+						</div>
+					</article>
+					<article class="project-card glass" data-category="ds">
+						<div class="project-media">
+							<img src="assets/projects/project-dementia.svg" alt="Dementia Risk Prediction" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">Data Science</span>
+							<h3>Dementia Risk Prediction</h3>
+							<p>Exploratory analysis and feature selection for risk indicators.</p>
+							<div class="tags"><span>EDA</span><span>Pandas</span><span>Statistics</span></div>
+							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+						</div>
+					</article>
+					<article class="project-card glass" data-category="ds">
+						<div class="project-media">
+							<img src="assets/projects/project-heart.svg" alt="Heart Disease Prediction" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">Data Science</span>
+							<h3>Heart Disease Prediction</h3>
+							<p>Statistical analysis on 1,000+ records to surface biomarkers.</p>
+							<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
+							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
 
-                    <div class="skill-category">
-                        <h3><i class="fas fa-users"></i> Soft Skills</h3>
-                        <div class="skill-list">
-                            <span class="skill-tag">Communication</span>
-                            <span class="skill-tag">Teamwork</span>
-                            <span class="skill-tag">Presentation</span>
-                            <span class="skill-tag">Project Management</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<!-- Certifications section -->
+		<section id="certifications" class="section reveal" aria-labelledby="certifications-title">
+			<div class="container">
+				<h2 id="certifications-title">Certifications</h2>
+				<p class="section-intro">Professional certifications aligned with data analysis, ML, and analytics.</p>
+				<div class="grid-3" data-stagger>
+					<article class="cert-card glass">
+						<h3>Data Scientist Associate</h3>
+						<p>Validated data analysis and Python skills.</p>
+						<span class="cert-meta">DataCamp</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>Data Analysis with Python</h3>
+						<p>Python for Data Science and data analysis workflows.</p>
+						<span class="cert-meta">IBM</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>Data Cleaning &amp; Visualization</h3>
+						<p>Data Cleaning, Pandas, Data Visualization, and SQL.</p>
+						<span class="cert-meta">Kaggle</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>Data Analysis with Python</h3>
+						<p>Data wrangling, visualization, and insights.</p>
+						<span class="cert-meta">FreeCodeCamp</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>ML Fundamentals &amp; Azure AI</h3>
+						<p>Machine Learning Fundamentals and Azure AI Fundamentals.</p>
+						<span class="cert-meta">Microsoft Learn</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>Data Science Fundamentals</h3>
+						<p>Data Science Fundamentals and Applied Machine Learning.</p>
+						<span class="cert-meta">LinkedIn Learning</span>
+					</article>
+					<article class="cert-card glass">
+						<h3>Machine Learning Crash Course</h3>
+						<p>Core ML concepts with practical exercises.</p>
+						<span class="cert-meta">Google</span>
+					</article>
+				</div>
+			</div>
+		</section>
 
-        <section id="projects">
-            <div class="container">
-                <h2 class="section-title">Featured Projects</h2>
-                <div class="cards-grid">
-                    <div class="card">
-                        <i class="fas fa-home card-icon"></i>
-                        <h3 class="card-title">House Price Prediction</h3>
-                        <p class="card-description">
-                            Comprehensive real estate data preprocessing and machine learning model to predict house prices with high accuracy.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">Regression</span>
-                        </div>
-                        <a href="#" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                    </div>
+		<!-- Achievements section -->
+		<section id="achievements" class="section reveal" aria-labelledby="achievements-title">
+			<div class="container">
+				<h2 id="achievements-title">Achievements</h2>
+				<div class="grid-3" data-stagger>
+					<article class="achievement glass">
+						<h3>IntelliHack 5.0 Finalist</h3>
+						<p>Top 10 finalist out of 350+ teams for predictive solutions.</p>
+						<span class="achievement-meta">IEEE UCSC</span>
+					</article>
+					<article class="achievement glass">
+						<h3>DataStorm 6.0 Finalist</h3>
+						<p>Top 10 finalist in business analytics and data visualization.</p>
+						<span class="achievement-meta">Rotaract</span>
+					</article>
+					<article class="achievement glass">
+						<h3>Academic Excellence</h3>
+						<p>Achieved 9 A grades in GCE Ordinary Level Examination.</p>
+						<span class="achievement-meta">GCE O/L</span>
+					</article>
+					<article class="achievement glass">
+						<h3>Biomedical Pipeline</h3>
+						<p>Developed analytics pipeline for CognivusLabs (Westminster SDGP).</p>
+						<span class="achievement-meta">CognivusLabs</span>
+					</article>
+				</div>
+			</div>
+		</section>
 
-                    <div class="card">
-                        <i class="fas fa-rocket card-icon"></i>
-                        <h3 class="card-title">Spaceship Titanic</h3>
-                        <p class="card-description">
-                            Achieved 0.79424 accuracy and ranked 660 on Kaggle. Predictive modeling for interstellar passenger transportation.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Kaggle</span>
-                            <span class="tag">Classification</span>
-                            <span class="tag">EDA</span>
-                        </div>
-                        <a href="#" class="card-link">View on Kaggle <i class="fas fa-arrow-right"></i></a>
-                    </div>
+		<!-- Blog section -->
+		<section id="blog" class="section reveal" aria-labelledby="blog-title">
+			<div class="container">
+				<h2 id="blog-title">Blog</h2>
+				<div class="grid-3" data-stagger>
+					<article class="blog-card glass">
+						<span class="badge">Coming Soon</span>
+						<img src="assets/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
+						<h3>Building Robust ML Pipelines</h3>
+						<p>Best practices for production-ready ML systems.</p>
+						<div class="meta">5 min read • ML</div>
+					</article>
+					<article class="blog-card glass">
+						<span class="badge">Coming Soon</span>
+						<img src="assets/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
+						<h3>Data Storytelling with Python</h3>
+						<p>Communicate insights with clarity and impact.</p>
+						<div class="meta">6 min read • Data</div>
+					</article>
+					<article class="blog-card glass">
+						<span class="badge">Coming Soon</span>
+						<img src="assets/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
+						<h3>From Notebook to Deployment</h3>
+						<p>Steps to ship ML models confidently.</p>
+						<div class="meta">7 min read • MLOps</div>
+					</article>
+				</div>
+			</div>
+		</section>
 
-                    <div class="card">
-                        <i class="fas fa-user-times card-icon"></i>
-                        <h3 class="card-title">Customer Churn Prediction</h3>
-                        <p class="card-description">
-                            TensorFlow-based Artificial Neural Network to predict customer churn and help businesses retain valuable customers.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">ANN</span>
-                            <span class="tag">Deep Learning</span>
-                        </div>
-                        <a href="#" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                    </div>
+		<!-- Contact section -->
+		<section id="contact" class="section reveal" aria-labelledby="contact-title">
+			<div class="container contact-layout">
+				<div class="contact-card glass" data-animate>
+					<h2 id="contact-title">Contact</h2>
+					<p>Let’s collaborate on impactful data science and analytics projects.</p>
+					<div class="contact-details">
+						<div>
+							<span class="label">Location</span>
+							<p>Western Province, Sri Lanka</p>
+						</div>
+						<div>
+							<span class="label">Email</span>
+							<p><a href="mailto:ashinsa.rivindu@gmail.com">ashinsa.rivindu@gmail.com</a></p>
+						</div>
+						<div>
+							<span class="label">Phone</span>
+							<p><a href="tel:+94752691645">+94 752 691 645</a></p>
+						</div>
+						<div>
+							<span class="label">Website</span>
+							<p><a href="https://rivindu-ashinsa.github.io/">rivindu-ashinsa.github.io</a></p>
+						</div>
+					</div>
+					<div class="socials" aria-label="Social media">
+						<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+					</div>
+				</div>
+				<form id="contact-form" class="glass" novalidate>
+					<label>
+						Name
+						<input type="text" name="name" required aria-required="true" autocomplete="name" />
+					</label>
+					<label>
+						Email
+						<input type="email" name="email" required aria-required="true" autocomplete="email" />
+					</label>
+					<label>
+						Message
+						<textarea name="message" rows="5" required aria-required="true"></textarea>
+					</label>
+					<button type="submit" class="btn primary">Send Message</button>
+					<p class="form-status" role="status" aria-live="polite"></p>
+				</form>
+			</div>
+		</section>
+	</main>
 
-                    <div class="card">
-                        <i class="fas fa-sort-numeric-up card-icon"></i>
-                        <h3 class="card-title">Handwritten Digits Recognition</h3>
-                        <p class="card-description">
-                            Convolutional Neural Network model for accurate classification of handwritten digits using the MNIST dataset.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">CNN</span>
-                            <span class="tag">Computer Vision</span>
-                            <span class="tag">MNIST</span>
-                        </div>
-                        <a href="#" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                    </div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="container footer-inner">
+			<p>© <span id="year"></span> Rivindu Ashinsa. All rights reserved.</p>
+			<div class="footer-links" aria-label="Quick links">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</div>
+			<div class="footer-socials" aria-label="Social links">
+				<a href="https://linkedin.com/in/rivindu-ashinsa" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+			</div>
+			<button class="back-to-top" aria-label="Back to top">↑</button>
+		</div>
+	</footer>
 
-                    <div class="card">
-                        <i class="fas fa-money-check-alt card-icon"></i>
-                        <h3 class="card-title">Loan Approval Prediction</h3>
-                        <p class="card-description">
-                            Machine learning model achieving 86% accuracy on Kaggle for predicting loan approval status based on applicant data.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Kaggle</span>
-                            <span class="tag">Classification</span>
-                            <span class="tag">Feature Engineering</span>
-                        </div>
-                        <a href="#" class="card-link">View on Kaggle <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="card">
-                        <i class="fas fa-brain card-icon"></i>
-                        <h3 class="card-title">Brain Tumor Detection</h3>
-                        <p class="card-description">
-                            Computer vision project using CNN to detect and classify brain tumors from MRI scans with high precision.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Medical AI</span>
-                            <span class="tag">CNN</span>
-                            <span class="tag">MRI Analysis</span>
-                        </div>
-                        <a href="#" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                    </div>
-
-                    <div class="card">
-                        <i class="fas fa-truck card-icon"></i>
-                        <h3 class="card-title">Supply Chain AI Automation</h3>
-                        <p class="card-description">
-                            AI-driven multi-agent system for supplier optimization and ESG monitoring in supply chain management.
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Multi-Agent AI</span>
-                            <span class="tag">Automation</span>
-                            <span class="tag">ESG</span>
-                        </div>
-                        <a href="#" class="card-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="cards-grid">
-                    <div class="cert-card">
-                        <h4><i class="fab fa-kaggle"></i> Kaggle</h4>
-                        <ul class="cert-list">
-                            <li>Pandas</li>
-                            <li>Data Visualization</li>
-                            <li>Intro to Machine Learning</li>
-                            <li>Intermediate Machine Learning</li>
-                            <li>Intro to Deep Learning</li>
-                            <li>Computer Vision</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fab fa-google"></i> Google ML Crash Course</h4>
-                        <ul class="cert-list">
-                            <li>Linear Regression</li>
-                            <li>Logistic Regression</li>
-                            <li>Decision Trees</li>
-                            <li>Numerical Data</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fas fa-laptop-code"></i> IBM (CognitiveClass.ai)</h4>
-                        <ul class="cert-list">
-                            <li>Python for Data Science</li>
-                            <li>Data Analysis with Python</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fab fa-free-code-camp"></i> FreeCodeCamp</h4>
-                        <ul class="cert-list">
-                            <li>Data Analysis Certificate</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fab fa-microsoft"></i> Microsoft</h4>
-                        <ul class="cert-list">
-                            <li>Introduction to Python</li>
-                            <li>Getting Started with Power BI</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fab fa-linkedin"></i> LinkedIn Learning</h4>
-                        <ul class="cert-list">
-                            <li>Data Science Fundamentals</li>
-                        </ul>
-                    </div>
-
-                    <div class="cert-card">
-                        <h4><i class="fas fa-graduation-cap"></i> Simplilearn</h4>
-                        <ul class="cert-list">
-                            <li>Introduction to AI</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="achievements">
-            <div class="container">
-                <h2 class="section-title">Achievements</h2>
-                <div class="achievement-item">
-                    <h3><i class="fas fa-trophy"></i> Top 10 Finalist at IntelliHack 5.0</h3>
-                    <p>Competed among talented developers and secured a top 10 position in one of Sri Lanka's premier hackathons.</p>
-                </div>
-                <div class="achievement-item">
-                    <h3><i class="fas fa-medal"></i> Participant at Idealize 2025</h3>
-                    <p>University of Moratuwa — Participated in innovative project showcase and competition.</p>
-                </div>
-                <div class="achievement-item">
-                    <h3><i class="fas fa-award"></i> Multiple ML Badges</h3>
-                    <p>Earned numerous badges and certifications from Google and Microsoft for completing advanced machine learning courses and challenges.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="blog">
-            <div class="container">
-                <h2 class="section-title">Blog</h2>
-                <div class="cards-grid">
-                    <div class="blog-card">
-                        <div class="blog-header">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="blog-content">
-                            <p class="blog-date">Coming Soon</p>
-                            <h3 class="blog-title">Understanding Neural Networks: A Beginner's Guide</h3>
-                            <p class="blog-excerpt">
-                                Dive deep into the fundamentals of neural networks, exploring how artificial neurons work together 
-                                to create intelligent systems capable of learning from data.
-                            </p>
-                            <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-header">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="blog-content">
-                            <p class="blog-date">Coming Soon</p>
-                            <h3 class="blog-title">My Kaggle Journey: From Beginner to Top 1000</h3>
-                            <p class="blog-excerpt">
-                                Sharing my experiences, strategies, and lessons learned while competing in Kaggle competitions 
-                                and climbing the leaderboard rankings.
-                            </p>
-                            <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="blog-card">
-                        <div class="blog-header">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <div class="blog-content">
-                            <p class="blog-date">Coming Soon</p>
-                            <h3 class="blog-title">Building a Customer Churn Prediction Model</h3>
-                            <p class="blog-excerpt">
-                                A comprehensive walkthrough of building an ANN model with TensorFlow to predict customer churn, 
-                                including data preprocessing, model architecture, and evaluation.
-                            </p>
-                            <a href="#" class="card-link">Read More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <div class="container">
-                <h2 class="section-title">Get in Touch</h2>
-                
-                <div class="contact-grid">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>Email</h3>
-                        <a href="mailto:your.email@example.com">your.email@example.com</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank">Connect with me</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <h3>GitHub</h3>
-                        <a href="https://github.com/yourusername" target="_blank">View my code</a>
-                    </div>
-                </div>
-
-                <div class="contact-form">
-                    <form onsubmit="handleSubmit(event)">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-social">
-                    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://kaggle.com/yourprofile" target="_blank"><i class="fab fa-kaggle"></i></a>
-                </div>
-                <p class="footer-text">
-                    © 2025 Rivindu Ashinsa | ML Engineer & Data Scientist
-                </p>
-                <p class="footer-links">
-                    <a href="#home">Home</a> |
-                    <a href="#about">About</a> |
-                    <a href="#contact">Contact</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="scripts/type.js"></script>
+	<script src="scripts/type.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
