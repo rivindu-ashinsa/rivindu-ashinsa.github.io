@@ -228,6 +228,10 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	font-weight: 600;
 	font-size: 0.98rem;
 }
+.btn.primary { background: var(--accent); color: #fff; }
+.btn.secondary { background: var(--accent-2); color: #06212c; }
+.btn.ghost { border-color: var(--border); color: var(--text); background: transparent; }
+.btn:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
 
 .hero-visual { position: relative; height: 320px; }
 @media (max-width: 768px) {
