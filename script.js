@@ -107,25 +107,48 @@ filterButtons.forEach((btn) => {
 // Contact form validation
 const form = document.getElementById("contact-form");
 const statusEl = document.querySelector(".form-status");
-form.addEventListener("submit", (event) => {
-	event.preventDefault();
-	const formData = new FormData(form);
-	const name = String(formData.get("name") || "").trim();
-	const email = String(formData.get("email") || "").trim();
-	const message = String(formData.get("message") || "").trim();
+if (form && statusEl) {
+	form.addEventListener("submit", async (event) => {
+		event.preventDefault();
+		event.stopPropagation();
+		const formData = new FormData(form);
+		const name = String(formData.get("name") || "").trim();
+		const email = String(formData.get("email") || "").trim();
+		const message = String(formData.get("message") || "").trim();
 
-	if (!name || !email || !message) {
-		statusEl.textContent = "Please fill in all fields.";
-		return;
-	}
-	if (!/^\S+@\S+\.\S+$/.test(email)) {
-		statusEl.textContent = "Please enter a valid email.";
-		return;
-	}
+		if (!name || !email || !message) {
+			statusEl.textContent = "Please fill in all fields.";
+			return;
+		}
+		if (!/^\S+@\S+\.\S+$/.test(email)) {
+			statusEl.textContent = "Please enter a valid email.";
+			return;
+		}
 
-	statusEl.textContent = "Message sent successfully (demo).";
-	form.reset();
-});
+		statusEl.textContent = "Sending...";
+		formData.set("_replyto", email);
+		const endpoint = form.dataset.endpoint;
+		if (!endpoint) {
+			statusEl.textContent = "Form endpoint is missing.";
+			return;
+		}
+		try {
+			const response = await fetch(endpoint, {
+				method: "POST",
+				body: formData,
+				headers: { Accept: "application/json" }
+			});
+			if (response.ok) {
+				statusEl.textContent = "Message sent successfully.";
+				form.reset();
+			} else {
+				statusEl.textContent = "Something went wrong. Please try again.";
+			}
+		} catch (error) {
+			statusEl.textContent = "Network error. Please try again.";
+		}
+	});
+}
 
 // Back to top button
 document.querySelector(".back-to-top").addEventListener("click", () => {
