@@ -44,8 +44,6 @@ const onScroll = () => navbar && navbar.classList.toggle("scrolled", window.scro
 window.addEventListener("scroll", onScroll);
 onScroll();
 
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
 // Active section highlighting
 const sections = document.querySelectorAll("section");
 const sectionObserver = new IntersectionObserver(

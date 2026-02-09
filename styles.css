@@ -67,7 +67,7 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	inset: 0;
 	background:
 		linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(11, 18, 34, 0.75)),
-		url("assets/hero/hero-bg.svg");
+		url("assets/images/hero/hero-bg.svg");
 	background-size: cover;
 	background-position: center;
 	opacity: 0.45;
@@ -180,7 +180,7 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	inset: 0;
 	background:
 		linear-gradient(160deg, rgba(15, 23, 42, 0.9), rgba(11, 18, 34, 0.75)),
-		url("assets/hero/hero-bg.svg");
+		url("assets/images/hero/hero-bg.svg");
 	background-size: cover;
 	background-position: center;
 	animation: pulse 14s ease-in-out infinite;
