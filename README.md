@@ -1,5 +1,3 @@
-// ...existing code...
-
 # Rivindu Ashinsa — Portfolio
 
 Welcome to my personal portfolio website! Here, you can explore my projects, skills, certifications, and contact information.
@@ -9,32 +7,33 @@ Welcome to my personal portfolio website! Here, you can explore my projects, ski
 
 ## Repository Files
 - [index.html](index.html): Main HTML layout and content
-- [style.css](style.css): Site styles and responsive rules
-- [type.js](type.js): Client-side interactions and animations
+- [styles.css](styles.css): Main site styles and responsive rules
+- [script.js](script.js): Global interactions (navigation, filters, form)
+- [scripts/type.js](scripts/type.js): Typing effect for the hero section
+- [blog-1.html](blog-1.html): Blog post layout
+- [assets/css/style.css](assets/css/style.css): Blog base styles
+- [assets/css/blog-style.css](assets/css/blog-style.css): Blog-specific styles
 - [README.md](README.md): Documentation for this project
 
 ## Features
-- Typing hero subtitle powered by the [`texts` array](type.js) and the [`type()`](type.js) function in [type.js](type.js).
-- Smooth scrolling and active navigation highlighting (scroll logic implemented in [type.js](type.js)).
-- Mobile sidebar toggle functionality via [`toggleMenu()`](type.js).
-- Contact form handler created with [`handleSubmit()`](type.js) (currently displays a confirmation alert).
-- Section entrance animations managed by the [`observer`](type.js) IntersectionObserver instance.
-- Responsive layout and components defined in [style.css](style.css).
+- Typing hero subtitle powered by the `texts` array in [scripts/type.js](scripts/type.js).
+- Smooth scrolling, active navigation highlighting, and reveal animations in [script.js](script.js).
+- Project filtering by category in the Projects section.
+- Contact form submission with inline status updates (Formspree endpoint).
+- Responsive layout and components defined in [styles.css](styles.css).
 
 ## How to Run
 1. Open [index.html](index.html) in a web browser (double-click or serve with a static server).
     - Optional local server: Run `python -m http.server` from the project directory and access it at http://localhost:8000.
 
 ## Customization
-- To change the rotating hero text, edit the `texts` array in [type.js](type.js).
-- Update UI styles by modifying [style.css](style.css).
+- To change the rotating hero text, edit the `texts` array in [scripts/type.js](scripts/type.js).
+- Update UI styles by modifying [styles.css](styles.css) and blog styles in [assets/css](assets/css).
 - Edit page content (projects, links, resume path) by updating [index.html](index.html).
 - Replace placeholder links and contact information in [index.html](index.html) with your actual profiles and email.
 
 ## Notes & TODOs
 - Replace placeholder external links (GitHub, LinkedIn, Kaggle, resume.pdf) in [index.html](index.html).
-- Consider replacing the alert in [`handleSubmit()`](type.js) with a real backend endpoint or a service like Formspree.
-- Improve accessibility by adding aria attributes for the sidebar toggle and form fields.
 - Add meta/social images and a manifest for better sharing and PWA support.
 
 ## License
