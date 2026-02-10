@@ -46,19 +46,26 @@ onScroll();
 
 // Active section highlighting
 const sections = document.querySelectorAll("section");
-const sectionObserver = new IntersectionObserver(
-	(entries) => {
-		entries.forEach((entry) => {
-			if (!entry.isIntersecting) return;
-			navLinks.forEach((link) => {
-				const isActive = link.getAttribute("href") === `#${entry.target.id}`;
-				link.classList.toggle("active", isActive);
-			});
-		});
-	},
-	{ threshold: 0.6 }
-);
-sections.forEach((section) => sectionObserver.observe(section));
+const setActiveLink = () => {
+	const offset = (navbar?.offsetHeight || 0) + 8;
+	const scrollPos = window.scrollY + offset;
+	let activeId = "";
+
+	sections.forEach((section) => {
+		if (section.offsetTop <= scrollPos) {
+			activeId = section.id;
+		}
+	});
+
+	navLinks.forEach((link) => {
+		const isActive = link.getAttribute("href") === `#${activeId}`;
+		link.classList.toggle("active", isActive);
+	});
+};
+
+window.addEventListener("scroll", setActiveLink);
+window.addEventListener("resize", setActiveLink);
+setActiveLink();
 
 // Reveal on scroll + staggered cards
 const revealObserver = new IntersectionObserver(
@@ -125,7 +132,7 @@ if (form && statusEl) {
 
 		statusEl.textContent = "Sending...";
 		formData.set("_replyto", email);
-		const endpoint = form.dataset.endpoint;
+		const endpoint = form.dataset.endpoint || form.getAttribute("action");
 		if (!endpoint) {
 			statusEl.textContent = "Form endpoint is missing.";
 			return;
