@@ -455,6 +455,12 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	margin: 10px 0 12px;
 	object-fit: cover;
 }
+.cert-card img {
+	width: 100%;
+	border-radius: 12px;
+	margin: 10px 0 12px;
+	object-fit: cover;
+}
 .cert-meta,
 .achievement-meta {
 	display: inline-block;
