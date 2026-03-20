@@ -109,6 +109,39 @@ filterButtons.forEach((btn) => {
 	});
 });
 
+// CognivusLabs project cover image loop
+const cognivusCover = document.getElementById("cognivus-cover");
+if (cognivusCover) {
+	const cognivusImages = [
+		"assets/images/projects/cognivuslabs/aiinsightdashboard.png",
+		"assets/images/projects/cognivuslabs/marketingsite.png",
+		"assets/images/projects/cognivuslabs/vitalshistory.png"
+	];
+	const fadeDurationMs = 450;
+	const slideDurationMs = 3000;
+	let currentImageIndex = 0;
+	let isTransitioning = false;
+
+	// Preload next images so transitions stay smooth.
+	cognivusImages.forEach((src) => {
+		const preloadedImage = new Image();
+		preloadedImage.src = src;
+	});
+
+	window.setInterval(() => {
+		if (isTransitioning) return;
+		isTransitioning = true;
+		cognivusCover.classList.add("is-fading");
+
+		window.setTimeout(() => {
+		currentImageIndex = (currentImageIndex + 1) % cognivusImages.length;
+		cognivusCover.src = cognivusImages[currentImageIndex];
+		cognivusCover.classList.remove("is-fading");
+		isTransitioning = false;
+		}, fadeDurationMs);
+	}, slideDurationMs);
+}
+
 // Contact form validation
 const form = document.getElementById("contact-form");
 const statusEl = document.querySelector(".form-status");
