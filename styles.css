@@ -108,6 +108,11 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	z-index: 0;
 }
 
+#about.section::before {
+	background: #0206179E;
+	opacity: 1;
+}
+
 .section > * { position: relative; z-index: 1; }
 
 /* Keep paragraph readability consistent across sections */
@@ -224,7 +229,7 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 		url("assets/images/hero/section-bg.svg");
 	background-size: cover, cover, cover, cover;
 	background-position: center;
-	animation: pulse 14s ease-in-out infinite;
+	animation: none;
 	pointer-events: none;
 }
 .hero-content {
@@ -338,7 +343,18 @@ h3 { font-size: clamp(1.3rem, 2.6vw, 1.6rem); }
 	grid-template-columns: 1.1fr 0.9fr;
 	gap: 28px;
 }
+.about-summary,
+.about-card,
+.education-card {
+	background: #0206179E;
+}
 .about-summary .lead { font-size: 1.05rem; max-width: 52ch; }
+.about-summary p,
+.about-summary li,
+.about-side p,
+.about-side li {
+	line-height: 2.05;
+}
 .about-summary a {
 	color: var(--accent-2);
 	text-decoration: none;
@@ -897,6 +913,19 @@ body.js .reveal {
 	transition: opacity 0.8s, transform 0.8s;
 }
 body.js .reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Keep section backgrounds visually stable while scrolling */
+body.js section.reveal,
+body.js section.reveal.visible {
+	opacity: 1;
+	transform: none;
+	transition: none;
+}
+
+body.js section.reveal::before,
+body.js section.reveal.visible::before {
+	opacity: 0.62;
+}
 body.js [data-animate] {
 	opacity: 0;
 	transform: translateY(18px);
@@ -1000,6 +1029,24 @@ body.js [data-stagger] > *.visible { opacity: 1; transform: translateY(0); }
 	.system-shot { padding: 6px; }
 	.project-info h3 { font-size: 1.2rem; }
 	.about-summary .lead { font-size: 1rem; }
+}
+
+/* Unified section child color */
+.section .glass,
+.section .about-summary,
+.section .about-card,
+.section .education-card,
+.section .project-card,
+.section .project-card-featured,
+.section .featured-box,
+.section .system-carousel,
+.section .system-shot,
+.section .contact-group,
+.section .profile-list a,
+.section .share-buttons a,
+.section .hero-meta span,
+.section .featured-links a {
+	background: #0206179E;
 }
 
 @media (prefers-reduced-motion: reduce) {
