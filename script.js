@@ -112,7 +112,7 @@ filterButtons.forEach((btn) => {
 // SDGP system screenshots carousel: show 3 at a time and slide left one-by-one.
 const sdgpCarouselTrack = document.getElementById("sdgp-carousel-track");
 if (sdgpCarouselTrack) {
-	const visibleCount = window.matchMedia("(max-width: 700px)").matches ? 1 : window.matchMedia("(max-width: 1024px)").matches ? 2 : 3;
+	const visibleCount = window.matchMedia("(max-width: 768px)").matches ? 1 : window.matchMedia("(max-width: 1024px)").matches ? 2 : 3;
 	const baseSlides = Array.from(sdgpCarouselTrack.children);
 	if (baseSlides.length > visibleCount) {
 		const clones = baseSlides.slice(0, visibleCount).map((slide) => slide.cloneNode(true));
