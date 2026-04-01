@@ -109,37 +109,48 @@ filterButtons.forEach((btn) => {
 	});
 });
 
-// CognivusLabs project cover image loop
-const cognivusCover = document.getElementById("cognivus-cover");
-if (cognivusCover) {
-	const cognivusImages = [
-		"assets/images/projects/cognivuslabs/aiinsightdashboard.png",
-		"assets/images/projects/cognivuslabs/marketingsite.png",
-		"assets/images/projects/cognivuslabs/vitalshistory.png"
-	];
-	const fadeDurationMs = 450;
-	const slideDurationMs = 3000;
-	let currentImageIndex = 0;
-	let isTransitioning = false;
+// SDGP system screenshots carousel: show 3 at a time and slide left one-by-one.
+const sdgpCarouselTrack = document.getElementById("sdgp-carousel-track");
+if (sdgpCarouselTrack) {
+	const visibleCount = window.matchMedia("(max-width: 700px)").matches ? 1 : window.matchMedia("(max-width: 1024px)").matches ? 2 : 3;
+	const baseSlides = Array.from(sdgpCarouselTrack.children);
+	if (baseSlides.length > visibleCount) {
+		const clones = baseSlides.slice(0, visibleCount).map((slide) => slide.cloneNode(true));
+		clones.forEach((clone) => sdgpCarouselTrack.appendChild(clone));
 
-	// Preload next images so transitions stay smooth.
-	cognivusImages.forEach((src) => {
-		const preloadedImage = new Image();
-		preloadedImage.src = src;
-	});
+		let index = 0;
+		let isAnimating = false;
+		const intervalMs = 2600;
 
-	window.setInterval(() => {
-		if (isTransitioning) return;
-		isTransitioning = true;
-		cognivusCover.classList.add("is-fading");
+		const getStepSize = () => {
+			const firstSlide = sdgpCarouselTrack.querySelector(".system-shot");
+			if (!firstSlide) return 0;
+			const slideWidth = firstSlide.getBoundingClientRect().width;
+			const computedTrackStyle = window.getComputedStyle(sdgpCarouselTrack);
+			const gap = parseFloat(computedTrackStyle.columnGap || computedTrackStyle.gap || "12");
+			return slideWidth + gap;
+		};
 
-		window.setTimeout(() => {
-		currentImageIndex = (currentImageIndex + 1) % cognivusImages.length;
-		cognivusCover.src = cognivusImages[currentImageIndex];
-		cognivusCover.classList.remove("is-fading");
-		isTransitioning = false;
-		}, fadeDurationMs);
-	}, slideDurationMs);
+		window.setInterval(() => {
+			if (isAnimating) return;
+			isAnimating = true;
+			index += 1;
+			const stepSize = getStepSize();
+			sdgpCarouselTrack.style.transform = `translateX(-${index * stepSize}px)`;
+
+			window.setTimeout(() => {
+				if (index >= baseSlides.length) {
+					sdgpCarouselTrack.style.transition = "none";
+					index = 0;
+					sdgpCarouselTrack.style.transform = "translateX(0)";
+					window.requestAnimationFrame(() => {
+						sdgpCarouselTrack.style.transition = "transform 0.5s ease";
+					});
+				}
+				isAnimating = false;
+			}, 520);
+		}, intervalMs);
+	}
 }
 
 // Contact form validation

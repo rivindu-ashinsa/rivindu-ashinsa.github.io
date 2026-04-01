@@ -93,9 +93,8 @@
 			<nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
 				<a href="#home" class="nav-link">Home</a>
 				<a href="#about" class="nav-link">About</a>
-				<a href="#experience" class="nav-link">Experience</a>
-				<a href="#skills" class="nav-link">Skills</a>
 				<a href="#projects" class="nav-link">Projects</a>
+				<a href="#skills" class="nav-link">Skills</a>
 				<a href="#certifications" class="nav-link">Certifications</a>
 				<a href="#achievements" class="nav-link">Achievements</a>
 				<a href="#blog" class="nav-link">Blog</a>
@@ -183,28 +182,106 @@
 			</div>
 		</section>
 
-		<!-- Experience section -->
-		<section id="experience" class="section reveal" aria-labelledby="experience-title">
+		<!-- Projects section -->
+		<section id="projects" class="section reveal" aria-label="Featured projects">
 			<div class="container">
-				<h2 id="experience-title">Relevant Experience</h2>
-				<div class="grid-3" data-stagger>
-					<article class="experience-card glass">
-						<span class="experience-meta">2025 – Present • University of Westminster (CognivusLabs)</span>
-						<h3>Data Scientist – SDGP</h3>
-						<p>Biomedical signal processing, clinical time-series analysis, and automated data pipelines.</p>
-						<div class="tags"><span>Python</span><span>SciPy</span><span>Time Series</span></div>
+				<div class="section-header">
+					<h2>Rivindu Ashinsa's Projects</h2>
+					<div class="filters" role="tablist" aria-label="Project filters">
+						<button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+						<button class="filter" data-filter="ds" role="tab" aria-selected="false">Data Science</button>
+						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ML</button>
+					</div>
+				</div>
+				<div class="grid-3 project-grid" data-stagger>
+					<article class="project-card project-card-featured glass" data-category="ds">
+						<div class="featured-top">
+							<div class="featured-left-stack">
+								<div class="featured-box media-box">
+									<h4>Wearable Patch</h4>
+									<div class="project-media featured-media wearable-media">
+										<img src="assets/images/projects/cognivuslabs/wearable%20patch.jpeg" alt="CognivusLabs wearable patch device" loading="lazy" />
+									</div>
+								</div>
+								<div class="featured-box media-box">
+									<h4>Demo Video Thumbnail</h4>
+									<div class="project-media featured-media thumbnail-media">
+										<a href="https://youtu.be/tj5HIRvgtc8" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs SDGP demo video">
+											<img src="assets/images/projects/cognivuslabs/Youtube%20Demo%20Thumbnail.png" alt="CognivusLabs SDGP demo thumbnail linked to YouTube" loading="lazy" />
+										</a>
+									</div>
+								</div>
+								<div class="featured-actions featured-box">
+									<h4>Project Links</h4>
+									<div class="links featured-links">
+										<a href="https://youtu.be/tj5HIRvgtc8" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs SDGP demo video">Demo Video</a>
+										<a href="https://cognivusmed.com/" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs official website">Official Website</a>
+										<a href="https://github.com/EdgeVitalsAI/Cognivus-Labs-Dev" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs GitHub repository">GitHub Repository</a>
+									</div>
+								</div>
+							</div>
+							<div class="project-info featured-box featured-description-box">
+								<span class="project-meta">Data Science • SDGP</span>
+								<h3>Cognivus Labs End-to-End Digital Health Monitoring Platform</h3>
+								<p>Cognivus Labs is an end-to-end digital health monitoring platform designed to enable real-time, AI-assisted patient insights. The project integrates wearable firmware, backend data pipelines, machine learning inference, and cross-platform interfaces (web, PWA, and mobile) into a single connected ecosystem. It continuously captures physiological signals such as ECG and SpO2, streams and processes data securely, and delivers live monitoring with actionable visualization for faster decision support.</p>
+								<p>I contributed to building and integrating core components across embedded systems, backend services, and ML-driven analytics to ensure reliable real-time performance from device to dashboard.</p>
+								<div class="tags"><span>Embedded Systems</span><span>Backend Pipelines</span><span>ML Analytics</span><span>Realtime Monitoring</span></div>
+							</div>
+						</div>
+						<div class="featured-gallery featured-box">
+							<h4>System Screenshots (3 visible, sliding left)</h4>
+							<div class="system-carousel" aria-live="polite">
+								<div class="system-carousel-track" id="sdgp-carousel-track">
+									<figure class="system-shot"><img src="assets/images/projects/cognivuslabs/aiinsightdashboard.png" alt="System image 1" loading="lazy" /><figcaption>System Image 1</figcaption></figure>
+									<figure class="system-shot"><img src="assets/images/projects/cognivuslabs/marketingsite.png" alt="System image 2" loading="lazy" /><figcaption>System Image 2</figcaption></figure>
+									<figure class="system-shot"><img src="assets/images/projects/cognivuslabs/vitalshistory.png" alt="System image 3" loading="lazy" /><figcaption>System Image 3</figcaption></figure>
+									<figure class="system-shot"><img src="assets/images/projects/cognivuslabs/wearable%20patch.jpeg" alt="System image 4" loading="lazy" /><figcaption>System Image 4</figcaption></figure>
+									<figure class="system-shot placeholder"><div class="placeholder-tile">Placeholder 5</div><figcaption>System Image 5</figcaption></figure>
+									<figure class="system-shot placeholder"><div class="placeholder-tile">Placeholder 6</div><figcaption>System Image 6</figcaption></figure>
+									<figure class="system-shot placeholder"><div class="placeholder-tile">Placeholder 7</div><figcaption>System Image 7</figcaption></figure>
+									<figure class="system-shot placeholder"><div class="placeholder-tile">Placeholder 8</div><figcaption>System Image 8</figcaption></figure>
+								</div>
+							</div>
+						</div>
 					</article>
-					<article class="experience-card glass">
-						<span class="experience-meta">2025 • XPredators Research Team</span>
-						<h3>Data Analyst</h3>
-						<p>EDA, statistical testing, and visualization to uncover health risk indicators.</p>
-						<div class="tags"><span>Pandas</span><span>SQL</span><span>Seaborn</span></div>
+					<article class="project-card glass" data-category="ml">
+						<div class="project-media">
+							<img src="assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png" alt="RepoDigest project cover" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">ML • GenAI</span>
+							<h3>RepoDigest – AI-Powered Code Analysis</h3>
+							<p>LangGraph + GenAI app to analyze 500+ repositories and generate structured insights.</p>
+							<div class="tags"><span>Python</span><span>LangGraph</span><span>OpenAI API</span></div>
+							<div class="links">
+								<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest GitHub repository">GitHub</a>
+								<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest project link">Project</a>
+							</div>
+						</div>
 					</article>
-					<article class="experience-card glass">
-						<span class="experience-meta">2025 • Personal Research</span>
-						<h3>Data Analyst – Heart Disease Prediction</h3>
-						<p>Data quality checks and biomarker discovery from 1,000+ patient records.</p>
-						<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
+					<article class="project-card glass" data-category="ds">
+						<div class="project-media">
+							<img src="assets/images/projects/project-dementia.svg" alt="Dementia Risk Prediction" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">Data Science</span>
+							<h3>Dementia Risk Prediction</h3>
+							<p>Exploratory analysis and feature selection for risk indicators.</p>
+							<div class="tags"><span>EDA</span><span>Pandas</span><span>Statistics</span></div>
+							<div class="links"><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction GitHub repository">GitHub</a><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction project link">Project</a></div>
+						</div>
+					</article>
+					<article class="project-card glass" data-category="ds">
+						<div class="project-media">
+							<img src="assets/images/projects/project-heart.svg" alt="Heart Disease Prediction" loading="lazy" />
+						</div>
+						<div class="project-info">
+							<span class="project-meta">Data Science</span>
+							<h3>Heart Disease Prediction</h3>
+							<p>Statistical analysis on 1,000+ records to surface biomarkers.</p>
+							<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
+							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
+						</div>
 					</article>
 				</div>
 			</div>
@@ -277,72 +354,7 @@
 			</div>
 		</section>
 
-		<!-- Projects section -->
-		<section id="projects" class="section reveal" aria-label="Featured projects">
-			<div class="container">
-				<div class="section-header">
-					<h2>Rivindu Ashinsa's Projects</h2>
-					<div class="filters" role="tablist" aria-label="Project filters">
-						<button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-						<button class="filter" data-filter="ds" role="tab" aria-selected="false">Data Science</button>
-						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ML</button>
-					</div>
-				</div>
-				<div class="grid-3 project-grid" data-stagger>
-					<article class="project-card glass" data-category="ds">
-						<div class="project-media">
-							<img id="cognivus-cover" src="assets/images/projects/cognivuslabs/aiinsightdashboard.png" alt="CognivusLabs Biomedical Analytics dashboard" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">Data Science</span>
-							<h3>CognivusLabs Biomedical Analytics</h3>
-							<p>Clinical time-series analysis and automated data pipelines.</p>
-							<div class="tags"><span>Python</span><span>SciPy</span><span>Time Series</span></div>
-							<div class="links"><a href="https://cognivusmed.com" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs Biomedical Analytics website">Website</a></div>
-						</div>
-					</article>
-					<article class="project-card glass" data-category="ml">
-						<div class="project-media">
-							<img src="assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png" alt="RepoDigest project cover" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">ML • GenAI</span>
-							<h3>RepoDigest – AI-Powered Code Analysis</h3>
-							<p>LangGraph + GenAI app to analyze 500+ repositories and generate structured insights.</p>
-							<div class="tags"><span>Python</span><span>LangGraph</span><span>OpenAI API</span></div>
-							<div class="links">
-								<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest GitHub repository">GitHub</a>
-								<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest project link">Project</a>
-							</div>
-						</div>
-					</article>
-					<article class="project-card glass" data-category="ds">
-						<div class="project-media">
-							<img src="assets/images/projects/project-dementia.svg" alt="Dementia Risk Prediction" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">Data Science</span>
-							<h3>Dementia Risk Prediction</h3>
-							<p>Exploratory analysis and feature selection for risk indicators.</p>
-							<div class="tags"><span>EDA</span><span>Pandas</span><span>Statistics</span></div>
-							<div class="links"><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction GitHub repository">GitHub</a><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction project link">Project</a></div>
-						</div>
-					</article>
-					<article class="project-card glass" data-category="ds">
-						<div class="project-media">
-							<img src="assets/images/projects/project-heart.svg" alt="Heart Disease Prediction" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">Data Science</span>
-							<h3>Heart Disease Prediction</h3>
-							<p>Statistical analysis on 1,000+ records to surface biomarkers.</p>
-							<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
-							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
-						</div>
-					</article>
-				</div>
-			</div>
-		</section>
+
 
 		<!-- Certifications section -->
 		<section id="certifications" class="section reveal" aria-label="Certifications">
@@ -537,7 +549,6 @@
 			<p>© 2025 Rivindu Ashinsa. All rights reserved.</p>
 			<div class="footer-links" aria-label="Quick links">
 				<a href="#about">About</a>
-				<a href="#experience">Experience</a>
 				<a href="#projects">Projects</a>
 				<a href="#contact">Contact</a>
 			</div>
