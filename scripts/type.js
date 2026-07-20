@@ -1,8 +1,11 @@
 "use strict";
 
-// Typing effect (hero)
+// Typing effect (hero readout line)
 const texts = [
-	"Machine Learning Engineer focused on trustworthy AI, deep learning, and predictive analytics."
+	"parsing ECG waveforms in real time...",
+	"forecasting SpO2 deterioration...",
+	"cleaning a dataset before trusting it...",
+	"shipping ML that holds up in production..."
 ];
 let textIndex = 0;
 let charIndex = 0;
@@ -37,7 +40,7 @@ function type() {
 		textIndex = (textIndex + 1) % texts.length;
 	}
 
-	const typingSpeed = isDeleting ? 45 : 85;
+	const typingSpeed = isDeleting ? 40 : 55;
 	setTimeout(type, typingSpeed);
 }
 

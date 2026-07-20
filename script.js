@@ -15,39 +15,39 @@ if (!("scrollBehavior" in document.documentElement.style)) {
 }
 
 // Mobile navigation toggle + accessibility
-const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-const navLinks = document.querySelectorAll(".nav-link");
+const menuBtn = document.querySelector(".menu-btn");
+const siteMenu = document.querySelector(".site-menu");
+const menuLinks = document.querySelectorAll(".menu-link");
 
 const closeMenu = () => {
-	if (!navToggle || !navMenu) return;
-	navToggle.classList.remove("open");
-	navMenu.classList.remove("open");
-	navToggle.setAttribute("aria-expanded", "false");
+	if (!menuBtn || !siteMenu) return;
+	menuBtn.classList.remove("open");
+	siteMenu.classList.remove("open");
+	menuBtn.setAttribute("aria-expanded", "false");
 };
 
-if (navToggle && navMenu) {
-	navToggle.addEventListener("click", () => {
-		const expanded = navToggle.getAttribute("aria-expanded") === "true";
-		navToggle.setAttribute("aria-expanded", String(!expanded));
-		navToggle.classList.toggle("open");
-		navMenu.classList.toggle("open");
+if (menuBtn && siteMenu) {
+	menuBtn.addEventListener("click", () => {
+		const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+		menuBtn.setAttribute("aria-expanded", String(!expanded));
+		menuBtn.classList.toggle("open");
+		siteMenu.classList.toggle("open");
 	});
 }
 
-navLinks.forEach((link) => link.addEventListener("click", closeMenu));
+menuLinks.forEach((link) => link.addEventListener("click", closeMenu));
 document.addEventListener("keydown", (event) => event.key === "Escape" && closeMenu());
 
-// Navbar blur on scroll
-const navbar = document.querySelector(".navbar");
-const onScroll = () => navbar && navbar.classList.toggle("scrolled", window.scrollY > 12);
+// Top bar background on scroll
+const topbar = document.querySelector(".topbar");
+const onScroll = () => topbar && topbar.classList.toggle("scrolled", window.scrollY > 12);
 window.addEventListener("scroll", onScroll);
 onScroll();
 
 // Active section highlighting
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section[id]");
 const setActiveLink = () => {
-	const offset = (navbar?.offsetHeight || 0) + 8;
+	const offset = (topbar?.offsetHeight || 0) + 8;
 	const scrollPos = window.scrollY + offset;
 	let activeId = "";
 
@@ -57,7 +57,7 @@ const setActiveLink = () => {
 		}
 	});
 
-	navLinks.forEach((link) => {
+	menuLinks.forEach((link) => {
 		const isActive = link.getAttribute("href") === `#${activeId}`;
 		link.classList.toggle("active", isActive);
 	});
@@ -78,7 +78,7 @@ const revealObserver = new IntersectionObserver(
 	{ threshold: 0.2 }
 );
 
-document.querySelectorAll(".reveal, [data-animate]").forEach((el) => revealObserver.observe(el));
+document.querySelectorAll("[data-reveal]").forEach((el) => revealObserver.observe(el));
 
 document.querySelectorAll("[data-stagger]").forEach((grid) => {
 	[...grid.children].forEach((child, i) => {
@@ -89,7 +89,7 @@ document.querySelectorAll("[data-stagger]").forEach((grid) => {
 
 // Project filters with smooth transitions
 const filterButtons = document.querySelectorAll(".filter");
-const projectCards = document.querySelectorAll(".project-card");
+const projectCards = document.querySelectorAll(".case-file");
 filterButtons.forEach((btn) => {
 	btn.addEventListener("click", () => {
 		filterButtons.forEach((b) => {
@@ -127,7 +127,7 @@ if (sdgpCarouselTrack) {
 			if (!firstSlide) return 0;
 			const slideWidth = firstSlide.getBoundingClientRect().width;
 			const computedTrackStyle = window.getComputedStyle(sdgpCarouselTrack);
-			const gap = parseFloat(computedTrackStyle.columnGap || computedTrackStyle.gap || "12");
+			const gap = parseFloat(computedTrackStyle.columnGap || computedTrackStyle.gap || "14");
 			return slideWidth + gap;
 		};
 
@@ -200,16 +200,9 @@ if (form && statusEl) {
 }
 
 // Back to top button
-document.querySelector(".back-to-top").addEventListener("click", () => {
-	window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-// Subtle hero parallax
-const heroVisual = document.querySelector(".hero-visual");
-if (heroVisual) {
-	window.addEventListener("scroll", () => {
-		const offset = Math.min(window.scrollY * 0.15, 40);
-		heroVisual.style.transform = `translateY(${offset}px)`;
+const backToTop = document.querySelector(".back-to-top");
+if (backToTop) {
+	backToTop.addEventListener("click", () => {
+		window.scrollTo({ top: 0, behavior: "smooth" });
 	});
 }
-

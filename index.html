@@ -9,7 +9,7 @@
 	<meta name="author" content="Rivindu Ashinsa" />
 	<meta name="robots" content="index, follow" />
 	<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-	<meta name="theme-color" content="#0f172a" />
+	<meta name="theme-color" content="#060907" />
 	<meta name="application-name" content="Rivindu Ashinsa Portfolio" />
 	<meta name="google-site-verification" content="googleeff5fdce55400274.html" />
 	<link rel="canonical" href="https://rivindu-ashinsa.github.io/" />
@@ -41,7 +41,6 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles.css" />
 
@@ -54,19 +53,9 @@
 			"url": "https://rivindu-ashinsa.github.io",
 			"image": "https://rivindu-ashinsa.github.io/favicon.jpg",
 			"jobTitle": "ML Engineer & Data Scientist",
-			"worksFor": {
-				"@type": "Organization",
-				"name": "Freelance"
-			},
-			"affiliation": {
-				"@type": "Organization",
-				"name": "Cognivus Labs",
-				"url": "https://cognivusmed.com/"
-			},
-			"alumniOf": {
-				"@type": "CollegeOrUniversity",
-				"name": "University of Westminster"
-			},
+			"worksFor": { "@type": "Organization", "name": "Freelance" },
+			"affiliation": { "@type": "Organization", "name": "Cognivus Labs", "url": "https://cognivusmed.com/" },
+			"alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Westminster" },
 			"knowsAbout": ["Machine Learning", "Data Science", "Deep Learning", "TensorFlow", "Python", "Artificial Intelligence"],
 			"description": "Machine Learning Engineer and Data Scientist specializing in AI, deep learning, and predictive analytics",
 			"sameAs": [
@@ -83,16 +72,7 @@
 			"name": "Rivindu Ashinsa Portfolio",
 			"url": "https://rivindu-ashinsa.github.io/",
 			"inLanguage": "en",
-			"about": [
-				{
-					"@type": "Person",
-					"name": "Rivindu Ashinsa"
-				},
-				{
-					"@type": "Organization",
-					"name": "Cognivus Labs"
-				}
-			]
+			"about": [ { "@type": "Person", "name": "Rivindu Ashinsa" }, { "@type": "Organization", "name": "Cognivus Labs" } ]
 		}
 	</script>
 	<script type="application/ld+json">
@@ -101,16 +81,8 @@
 			"@type": "CollectionPage",
 			"name": "Rivindu Ashinsa Portfolio Projects",
 			"url": "https://rivindu-ashinsa.github.io/#projects",
-			"isPartOf": {
-				"@type": "WebSite",
-				"url": "https://rivindu-ashinsa.github.io/"
-			},
-			"about": [
-				"Rivindu Ashinsa",
-				"Cognivus Labs",
-				"Machine Learning",
-				"Data Science"
-			]
+			"isPartOf": { "@type": "WebSite", "url": "https://rivindu-ashinsa.github.io/" },
+			"about": ["Rivindu Ashinsa", "Cognivus Labs", "Machine Learning", "Data Science"]
 		}
 	</script>
 	<script type="application/ld+json">
@@ -139,101 +111,106 @@
 <body>
 	<a class="skip-link" href="#main">Skip to content</a>
 
-	<!-- Sticky navigation bar -->
-	<header class="navbar" role="banner">
-		<div class="container nav-inner">
-			<a href="#home" class="logo" aria-label="Homepage">
-				<span class="logo-mark">RA</span>
-				<span class="logo-text">RA Portfolio</span>
+	<header class="topbar" role="banner">
+		<div class="wrap bar-inner">
+			<a href="#home" class="mark" aria-label="Homepage">
+				<!-- Placeholder: swap src for your logo file, e.g. assets/images/logo.png -->
+				<img src="assets/images/logo.png" alt="Rivindu Ashinsa logo" class="mark-logo" />
+				<span class="mark-text">rivindu<span class="accent">.</span>ashinsa</span>
 			</a>
-			<button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+			<button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-menu">
 				<span></span><span></span><span></span>
 			</button>
-			<nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
-				<a href="#home" class="nav-link">Home</a>
-				<a href="#about" class="nav-link">About</a>
-				<a href="#projects" class="nav-link">Projects</a>
-				<a href="#skills" class="nav-link">Skills</a>
-				<a href="#certifications" class="nav-link">Certifications</a>
-				<a href="#achievements" class="nav-link">Achievements</a>
-				<a href="#blog" class="nav-link">Blog</a>
-				<a href="#contact" class="nav-link">Contact</a>
+			<nav id="site-menu" class="site-menu" aria-label="Main navigation">
+				<a href="#about" class="menu-link">profile</a>
+				<a href="#experience" class="menu-link">experience</a>
+				<a href="#projects" class="menu-link">case files</a>
+				<a href="#skills" class="menu-link">stack</a>
+				<a href="#certifications" class="menu-link">credentials</a>
+				<a href="#achievements" class="menu-link">log</a>
+				<a href="#blog" class="menu-link">dispatches</a>
+				<a href="#contact" class="menu-link">connect</a>
 			</nav>
 		</div>
 	</header>
 
 	<main id="main">
-		<!-- Hero section -->
+		<!-- Hero -->
 		<section id="home" class="section hero" aria-label="Hero section">
-			<div class="hero-bg" aria-hidden="true"></div>
-			<div class="container hero-content">
-				<div class="hero-text" data-animate>
-					<p class="eyebrow">Rivindu Ashinsa | ML Engineer &amp; Data Scientist</p>
-					<h1>Rivindu Ashinsa</h1>
-					<p class="subtitle">Machine Learning Engineer &amp; Data Scientist specializing in AI, deep learning, and predictive analytics.</p>
-					<p class="typing" id="typing" aria-live="polite"></p>
-					<div class="hero-meta">
-						<span>Western Province, Sri Lanka</span>
-						<span>Python • SQL • Analytics</span>
-						<span>Open to internships</span>
-					</div>
-					<div class="cta-group">
-						<a href="#projects" class="btn primary">View Projects</a>
-						<a href="#contact" class="btn secondary">Get in Touch</a>
-						<a href="resume/RivinduAshinsaResumeGenAI.pdf" class="btn ghost" download>Download CV</a>
+			<div class="wrap hero-inner">
+				<div class="hero-copy" data-reveal>
+					<p class="eyebrow"><span class="blip" aria-hidden="true"></span>machine learning engineer &middot; data scientist</p>
+					<h1>Rivindu<br />Ashinsa</h1>
+					<p class="hero-lede">I build the ML systems inside real-time healthcare monitors &mdash; turning raw ECG and SpO2 waveforms into clinical decisions a doctor can act on.</p>
+					<p class="hero-type" id="typing" aria-live="polite"></p>
+					<div class="cta-row">
+						<a href="#projects" class="btn btn-solid">view case files</a>
+						<a href="#contact" class="btn btn-line">open a channel</a>
+						<a href="resume/RivinduAshinsaResumeGenAI.pdf" class="btn btn-ghost" download>download cv</a>
 					</div>
 				</div>
-				<div class="hero-visual" aria-hidden="true">
-					<div class="grid-shine"></div>
+				<div class="vitals-panel" data-reveal aria-label="Quick facts">
+					<div class="vitals-head">
+						<span>LIVE READOUT</span>
+						<span class="status-dot" aria-hidden="true"></span>
+					</div>
+					<div class="ecg-wrap" aria-hidden="true">
+						<svg class="ecg-trace" viewBox="0 0 400 120" preserveAspectRatio="none">
+							<polyline class="ecg-path" points="0,60 20,60 30,54 40,60 48,68 54,14 60,100 66,60 76,60 86,64 96,48 106,64 116,60 200,60 220,60 230,54 240,60 248,68 254,14 260,100 266,60 276,60 286,64 296,48 306,64 316,60 400,60" />
+						</svg>
+					</div>
+					<dl class="vitals-list">
+						<div class="vital"><dt>projects shipped</dt><dd>05</dd></div>
+						<div class="vital"><dt>certifications</dt><dd>03</dd></div>
+						<div class="vital"><dt>hackathon top&#8209;10s</dt><dd>02</dd></div>
+						<div class="vital"><dt>based in</dt><dd>Sri Lanka</dd></div>
+					</dl>
 				</div>
 			</div>
 		</section>
 
-		<!-- About section -->
-		<section id="about" class="section reveal" aria-label="About Rivindu Ashinsa">
-			<div class="container about-layout">
-				<div class="about-summary glass" data-animate>
-					<h2>About Rivindu Ashinsa</h2>
-					<p class="lead">
-						I turn messy data into clear, decision-ready insights. My work spans data cleaning, analysis, and visualization with
-						Python and SQL, and I enjoy building reproducible analytics workflows. Explore the
-						<a href="#projects">featured projects</a> for recent work.
-					</p>
-					<p class="muted">I care about clarity, reproducibility, and insights that help teams act confidently.</p>
-					<ul class="about-values">
+		<!-- About -->
+		<section id="about" class="section" aria-label="About Rivindu Ashinsa">
+			<div class="wrap about-grid">
+				<div class="panel about-bio" data-reveal>
+					<p class="eyebrow"><span class="blip" aria-hidden="true"></span>profile</p>
+					<h2>About</h2>
+					<p class="lede">I turn messy signals into decision-ready insight &mdash; whether that signal is a literal ECG waveform off a wearable patch, or a dataset that needs cleaning before anyone can trust a conclusion drawn from it. Recent work lives in the <a href="#projects" style="color:var(--trace); text-decoration:none; border-bottom:1px solid var(--trace-dim);">case files</a> below.</p>
+					<p style="color:var(--ink-dim);">I care about clarity, reproducibility, and models that hold up outside the notebook.</p>
+					<ul class="value-list">
 						<li>Clear reporting with actionable takeaways</li>
 						<li>Well-documented, repeatable analysis</li>
 						<li>Clean datasets that enable reliable decisions</li>
 					</ul>
-					<ul class="about-tags">
-						<li>Data Cleaning</li>
-						<li>Exploratory Analysis</li>
-						<li>Visualization</li>
-						<li>Statistical Methods</li>
-					</ul>
+					<div class="chip-row">
+						<span class="chip">Data Cleaning</span>
+						<span class="chip">Exploratory Analysis</span>
+						<span class="chip">Visualization</span>
+						<span class="chip">Statistical Methods</span>
+					</div>
 				</div>
-				<div class="about-side" data-animate>
-					<div class="about-card glass">
-						<img src="favicon.jpg" alt="Rivindu Ashinsa - ML Engineer" loading="lazy" />
+				<div class="about-side">
+					<div class="panel id-card" data-reveal>
+						<img src="favicon.jpg" alt="Rivindu Ashinsa - ML Engineer" loading="lazy" class="id-photo" />
 						<div>
-							<h3>Quick Profile</h3>
-							<ul class="pill-list">
+							<span class="id-label">field profile</span>
+							<ul class="id-list">
 								<li>Western Province, Sri Lanka</li>
 								<li>ML Engineer &amp; Data Scientist</li>
 								<li>BSc (Hons) Computer Science</li>
 							</ul>
 						</div>
 					</div>
-					<div class="education-card glass">
-						<h3>Education</h3>
-						<div class="education-item">
-							<span class="time">Sep 2024 – Jun 2028 (Expected)</span>
-							<h4>BSc (Hons) Computer Science</h4>
+					<div class="panel edu-card" data-reveal>
+						<span class="id-label">education log</span>
+						<div class="edu-item">
+							<span class="edu-time">Sep 2024 &ndash; Jun 2028 (Expected)</span>
+							<h3>BSc (Hons) Computer Science</h3>
 							<p>University of Westminster, United Kingdom.</p>
 						</div>
-						<div class="education-item">
-							<span class="time">Sep 2023 – May 2024</span>
-							<h4>Foundation in Information Technology</h4>
+						<div class="edu-item">
+							<span class="edu-time">Sep 2023 &ndash; May 2024</span>
+							<h3>Foundation in Information Technology</h3>
 							<p>Informatics Institute of Technology (IIT), Sri Lanka.</p>
 						</div>
 					</div>
@@ -241,19 +218,53 @@
 			</div>
 		</section>
 
-		<!-- Projects section -->
-		<section id="projects" class="section reveal" aria-label="Featured projects">
-			<div class="container">
-				<div class="section-header">
-					<h2>Rivindu Ashinsa's Projects</h2>
-					<div class="filters" role="tablist" aria-label="Project filters">
-						<button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
-						<button class="filter" data-filter="ds" role="tab" aria-selected="false">Data Science</button>
-						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ML</button>
+		<!-- Experience -->
+		<section id="experience" class="section" aria-label="Work experience">
+			<div class="wrap">
+				<p class="eyebrow"><span class="blip" aria-hidden="true"></span>experience</p>
+				<h2>Currently Building</h2>
+				<div class="panel experience-entry" data-reveal>
+					<div class="experience-head">
+						<div>
+							<span class="edu-time">Present</span>
+							<h3>AI Engineer Intern</h3>
+							<p class="experience-company">Zelora (Appoyo)</p>
+						</div>
+						<span class="chip chip-live">active</span>
+					</div>
+					<p>Working mainly on MCP (Model Context Protocol) servers &mdash; building and integrating the tool layer that lets AI systems act on real data and services.</p>
+					<div class="chip-row">
+						<span class="chip">MCP Servers</span>
+						<span class="chip">AI Tooling</span>
+						<span class="chip">API Integration</span>
 					</div>
 				</div>
-				<div class="grid-3 project-grid" data-stagger>
-					<article class="project-card project-card-featured glass" data-category="ds">
+			</div>
+		</section>
+
+		<div class="wave-divider" aria-hidden="true">
+			<svg viewBox="0 0 400 120" preserveAspectRatio="none">
+				<polyline class="ecg-trace ecg-path" points="0,60 20,60 30,54 40,60 48,68 54,14 60,100 66,60 76,60 86,64 96,48 106,64 116,60 200,60 220,60 230,54 240,60 248,68 254,14 260,100 266,60 276,60 286,64 296,48 306,64 316,60 400,60" style="animation:ecgScroll 3.2s linear infinite; width:200%;" />
+			</svg>
+		</div>
+
+		<!-- Projects -->
+		<section id="projects" class="section" aria-label="Featured projects">
+			<div class="wrap">
+				<div class="section-header">
+					<div>
+						<p class="eyebrow"><span class="blip" aria-hidden="true"></span>case files</p>
+						<h2>Rivindu Ashinsa's Projects</h2>
+					</div>
+					<div class="filters" role="tablist" aria-label="Project filters">
+						<button class="filter active" data-filter="all" role="tab" aria-selected="true">all</button>
+						<button class="filter" data-filter="ds" role="tab" aria-selected="false">data science</button>
+						<button class="filter" data-filter="ml" role="tab" aria-selected="false">ml</button>
+						<button class="filter" data-filter="product" role="tab" aria-selected="false">product</button>
+					</div>
+				</div>
+				<div class="project-grid" data-stagger>
+					<article class="case-file panel case-file-featured" data-category="ds">
 						<div class="featured-top">
 							<div class="featured-left-stack">
 								<div class="featured-box media-box">
@@ -271,8 +282,8 @@
 									</div>
 								</div>
 							</div>
-							<div class="project-info featured-box featured-description-box">
-								<span class="project-meta">Data Science • SDGP</span>
+							<div class="featured-box featured-description-box">
+								<span class="case-tag">flagship case file &middot; data science &middot; SDGP</span>
 								<h3>Cognivus Labs End-to-End Digital Health Monitoring Platform</h3>
 								<p>Cognivus Labs is a production-grade, real-time healthcare intelligence platform connecting wearable IoT sensing, clinical-grade backend services, and AI-driven decision support into one end-to-end ecosystem.</p>
 								<ul class="sdgp-points">
@@ -283,7 +294,7 @@
 								</ul>
 								<div class="tags"><span>Embedded Systems</span><span>Backend Pipelines</span><span>ML Analytics</span><span>Realtime Monitoring</span></div>
 							</div>
-							<div class="featured-actions featured-box">
+							<div class="featured-box featured-actions">
 								<h4>Project Links</h4>
 								<div class="links featured-links">
 									<a href="https://youtu.be/tj5HIRvgtc8" target="_blank" rel="noopener noreferrer" aria-label="CognivusLabs SDGP demo video"><i class="fa-brands fa-youtube" aria-hidden="true"></i><span>Demo Video</span></a>
@@ -294,7 +305,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="featured-gallery featured-box">
+						<div class="featured-gallery">
 							<h4>This Is How The System Looks</h4>
 							<div class="system-carousel" aria-live="polite">
 								<div class="system-carousel-track" id="sdgp-carousel-track">
@@ -310,289 +321,207 @@
 							</div>
 						</div>
 					</article>
-					<article class="project-card glass" data-category="ml">
-						<div class="project-media">
-							<img src="assets/images/projects/webanalyser/webanalyser.png" alt="AI-Powered Website Audit Tool project cover" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">ML • GenAI</span>
-							<h3>AI-Powered Website Audit Tool</h3>
-							<p>FastAPI backend that audits webpages, computes factual metrics, and delivers AI-driven insights and recommendations via LLM integration.</p>
-							<div class="tags"><span>FastAPI</span><span>Python</span><span>LLM Integration</span><span>Web Scraping</span></div>
-							<div class="links">
-								<a href="https://github.com/rivindu-ashinsa/AI-Powered-Web-site-Audit-Tool" target="_blank" rel="noopener noreferrer" aria-label="AI-Powered Website Audit Tool GitHub repository">GitHub</a>
-								<a href="https://github.com/rivindu-ashinsa/AI-Powered-Web-site-Audit-Tool" target="_blank" rel="noopener noreferrer" aria-label="AI-Powered Website Audit Tool project link">Project</a>
-								<a href="https://rivindu-ashinsa.github.io/AI-Powered-Web-site-Audit-Tool" target="_blank" rel="noopener noreferrer" aria-label="Try AI-Powered Website Audit Tool">Try it out</a>
-							</div>
+
+					<article class="case-file panel" data-category="product">
+						<!-- Placeholder: swap for a Fortiq dashboard screenshot, e.g. assets/images/projects/fortiq/fortiq.png -->
+						<div class="project-media placeholder-tile" aria-hidden="true">screenshot placeholder</div>
+						<span class="case-tag">product &middot; saas</span>
+						<h3>Fortiq</h3>
+						<p>Multi-tenant SaaS platform for gym and fitness center management &mdash; memberships, billing, and staff operations for multiple gyms from a single platform.</p>
+						<div class="tags"><span>Multi-tenant Architecture</span><span>SaaS</span><span>Full-Stack</span></div>
+					</article>
+
+					<article class="case-file panel" data-category="ml">
+						<div class="project-media"><img src="assets/images/projects/webanalyser/webanalyser.png" alt="AI-Powered Website Audit Tool project cover" loading="lazy" /></div>
+						<span class="case-tag">ml &middot; genai</span>
+						<h3>AI-Powered Website Audit Tool</h3>
+						<p>FastAPI backend that audits webpages, computes factual metrics, and delivers AI-driven insights and recommendations via LLM integration.</p>
+						<div class="tags"><span>FastAPI</span><span>Python</span><span>LLM Integration</span><span>Web Scraping</span></div>
+						<div class="links">
+							<a href="https://github.com/rivindu-ashinsa/AI-Powered-Web-site-Audit-Tool" target="_blank" rel="noopener noreferrer" aria-label="AI-Powered Website Audit Tool GitHub repository">GitHub</a>
+							<a href="https://rivindu-ashinsa.github.io/AI-Powered-Web-site-Audit-Tool" target="_blank" rel="noopener noreferrer" aria-label="Try AI-Powered Website Audit Tool">Try it out</a>
 						</div>
 					</article>
-					<article class="project-card glass" data-category="ml">
-						<div class="project-media">
-							<img src="assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png" alt="RepoDigest project cover" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">ML • GenAI</span>
-							<h3>RepoDigest – AI-Powered Code Analysis</h3>
-							<p>LangGraph + GenAI app to analyze 500+ repositories and generate structured insights.</p>
-							<div class="tags"><span>Python</span><span>LangGraph</span><span>OpenAI API</span></div>
-							<div class="links">
-								<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest GitHub repository">GitHub</a>
-								<a href="https://rivindu-ashinsa.github.io/RepoDigest/" target="_blank" rel="noopener noreferrer" aria-label="Try RepoDigest">Try it out</a>
-							</div>
+
+					<article class="case-file panel" data-category="ml">
+						<div class="project-media"><img src="assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png" alt="RepoDigest project cover" loading="lazy" /></div>
+						<span class="case-tag">ml &middot; genai</span>
+						<h3>RepoDigest &ndash; AI-Powered Code Analysis</h3>
+						<p>LangGraph + GenAI app to analyze 500+ repositories and generate structured insights.</p>
+						<div class="tags"><span>Python</span><span>LangGraph</span><span>OpenAI API</span></div>
+						<div class="links">
+							<a href="https://github.com/rivindu-ashinsa/RepoDigest" target="_blank" rel="noopener noreferrer" aria-label="RepoDigest GitHub repository">GitHub</a>
+							<a href="https://rivindu-ashinsa.github.io/RepoDigest/" target="_blank" rel="noopener noreferrer" aria-label="Try RepoDigest">Try it out</a>
 						</div>
 					</article>
-					<article class="project-card glass" data-category="ds">
-						<div class="project-media">
-							<img src="assets/images/projects/dimentia/dimentia_thumbnail.png" alt="Dementia Risk Prediction" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">Data Science</span>
-							<h3>Dementia Risk Prediction</h3>
-							<p>Exploratory analysis and feature selection for risk indicators.</p>
-							<div class="tags"><span>EDA</span><span>Pandas</span><span>Statistics</span></div>
-							<div class="links"><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction GitHub repository">GitHub</a><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction project link">Project</a></div>
-						</div>
+
+					<article class="case-file panel" data-category="ds">
+						<div class="project-media"><img src="assets/images/projects/dimentia/dimentia_thumbnail.png" alt="Dementia Risk Prediction" loading="lazy" /></div>
+						<span class="case-tag">data science</span>
+						<h3>Dementia Risk Prediction</h3>
+						<p>Exploratory analysis and feature selection for risk indicators.</p>
+						<div class="tags"><span>EDA</span><span>Pandas</span><span>Statistics</span></div>
+						<div class="links"><a href="https://github.com/Team-XPredators/Dementia-Prediction-xpredators" target="_blank" rel="noopener noreferrer" aria-label="Dementia Risk Prediction GitHub repository">GitHub</a></div>
 					</article>
-					<article class="project-card glass" data-category="ds">
-						<div class="project-media">
-							<img src="assets/images/projects/heartDisease/heartdisease.png" alt="Heart Disease Prediction" loading="lazy" />
-						</div>
-						<div class="project-info">
-							<span class="project-meta">Data Science</span>
-							<h3>Heart Disease Prediction</h3>
-							<p>Statistical analysis on 1,000+ records to surface biomarkers.</p>
-							<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
-							<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
-						</div>
+
+					<article class="case-file panel" data-category="ds">
+						<div class="project-media"><img src="assets/images/projects/heartDisease/heartdisease.png" alt="Heart Disease Prediction" loading="lazy" /></div>
+						<span class="case-tag">data science</span>
+						<h3>Heart Disease Prediction</h3>
+						<p>Statistical analysis on 1,000+ records to surface biomarkers.</p>
+						<div class="tags"><span>SQL</span><span>Statistics</span><span>Validation</span></div>
+						<div class="links"><a href="#">GitHub</a><a href="#">Demo</a></div>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<!-- Skills section -->
-		<section id="skills" class="section reveal" aria-label="Skills and expertise">
-			<div class="container">
+		<!-- Skills -->
+		<section id="skills" class="section" aria-label="Skills and expertise">
+			<div class="wrap">
+				<p class="eyebrow"><span class="blip" aria-hidden="true"></span>stack</p>
 				<h2>Skills &amp; Expertise</h2>
 				<p class="section-intro">Core tools and competencies aligned with data science and analytics workflows.</p>
-				<div class="grid-3" data-stagger>
-					<div class="skill-card glass">
-						<h3>Programming Languages</h3>
-						<ul class="skill-list">
-							<li>Python</li>
-							<li>SQL (MySQL, MariaDB)</li>
-							<li>R</li>
-							<li>Java</li>
-						</ul>
-					</div>
-					<div class="skill-card glass">
-						<h3>Data Analysis &amp; Cleaning</h3>
-						<ul class="skill-list">
-							<li>Pandas</li>
-							<li>NumPy</li>
-							<li>SciPy</li>
-							<li>Feature Engineering</li>
-						</ul>
-					</div>
-					<div class="skill-card glass">
-						<h3>Visualization &amp; Reporting</h3>
-						<ul class="skill-list">
-							<li>Matplotlib</li>
-							<li>Seaborn</li>
-							<li>Power BI</li>
-							<li>Dashboard Creation</li>
-						</ul>
-					</div>
-					<div class="skill-card glass">
-						<h3>Machine Learning Tools</h3>
-						<ul class="skill-list">
-							<li>scikit-learn</li>
-							<li>TensorFlow</li>
-							<li>Keras</li>
-							<li>XGBoost</li>
-						</ul>
-					</div>
-					<div class="skill-card glass">
-						<h3>Development Tools</h3>
-						<ul class="skill-list">
-							<li>Git</li>
-							<li>GitHub</li>
-							<li>Jupyter Notebook</li>
-							<li>VS Code</li>
-							<li>Streamlit</li>
-							<li>Linux</li>
-						</ul>
-					</div>
-					<div class="skill-card glass">
-						<h3>Key Competencies</h3>
-						<ul class="skill-list">
-							<li>Data Cleaning</li>
-							<li>Analytical Thinking</li>
-							<li>Data Visualization</li>
-							<li>Statistical Methods</li>
-							<li>Decision Support</li>
-						</ul>
-					</div>
+				<div class="stack-grid" data-stagger style="margin-top:32px;">
+					<div class="panel stack-card"><h3>Programming Languages</h3><ul class="stack-list"><li>Python</li><li>SQL (MySQL, MariaDB)</li><li>R</li><li>Java</li></ul></div>
+					<div class="panel stack-card"><h3>Data Analysis &amp; Cleaning</h3><ul class="stack-list"><li>Pandas</li><li>NumPy</li><li>SciPy</li><li>Feature Engineering</li></ul></div>
+					<div class="panel stack-card"><h3>Visualization &amp; Reporting</h3><ul class="stack-list"><li>Matplotlib</li><li>Seaborn</li><li>Power BI</li><li>Dashboard Creation</li></ul></div>
+					<div class="panel stack-card"><h3>Machine Learning Tools</h3><ul class="stack-list"><li>scikit-learn</li><li>TensorFlow</li><li>Keras</li><li>XGBoost</li></ul></div>
+					<div class="panel stack-card"><h3>Development Tools</h3><ul class="stack-list"><li>Git</li><li>GitHub</li><li>Jupyter Notebook</li><li>VS Code</li><li>Streamlit</li><li>Linux</li></ul></div>
+					<div class="panel stack-card"><h3>Key Competencies</h3><ul class="stack-list"><li>Data Cleaning</li><li>Analytical Thinking</li><li>Data Visualization</li><li>Statistical Methods</li><li>Decision Support</li></ul></div>
 				</div>
 			</div>
 		</section>
 
-
-
-		<!-- Certifications section -->
-		<section id="certifications" class="section reveal" aria-label="Certifications">
-			<div class="container">
+		<!-- Certifications -->
+		<section id="certifications" class="section" aria-label="Certifications">
+			<div class="wrap">
+				<p class="eyebrow"><span class="blip" aria-hidden="true"></span>credentials</p>
 				<h2>Rivindu Ashinsa's Certifications</h2>
 				<p class="section-intro">Professional certifications aligned with data analysis, ML, and analytics.</p>
-				<div class="grid-3" data-stagger>
-					<article class="cert-card glass">
+				<div class="cred-grid" data-stagger style="margin-top:32px;">
+					<article class="panel cred-card">
 						<h3>Data Scientist Associate</h3>
 						<img src="assets/images/certificates/Associate%20Data%20Scientist.jpg" alt="Data Scientist Associate certificate" loading="lazy" decoding="async" />
 						<p>Validated data analysis and Python skills.</p>
-						<span class="cert-meta">DataCamp</span>
+						<span class="cred-meta">DataCamp</span>
 					</article>
-					<article class="cert-card glass">
+					<article class="panel cred-card">
 						<h3>Data Analysis with Python</h3>
 						<img src="assets/images/certificates/data%20anallysis%20freecodecamp.png" alt="Data Analysis with Python certificate" loading="lazy" decoding="async" />
 						<p>Python for Data Science and data analysis workflows.</p>
-						<span class="cert-meta">FreeCodeCamp</span>
+						<span class="cred-meta">FreeCodeCamp</span>
 					</article>
-					<article class="cert-card glass">
+					<article class="panel cred-card">
 						<h3>AI and Vector Search</h3>
 						<img src="assets/images/certificates/AI%20and%20vector%20search.jpg" alt="AI and Vector Search certificate" loading="lazy" decoding="async" />
 						<p>Built practical skills in AI-powered retrieval and vector search workflows.</p>
-						<span class="cert-meta">MongoDB</span>
+						<span class="cred-meta">MongoDB</span>
 					</article>
 				</div>
-				<div class="cta-group">
-					<a href="https://www.linkedin.com/in/rivindu-ashinsa/details/certifications/" class="btn ghost" target="_blank" rel="noopener noreferrer" aria-label="View more certificates on LinkedIn">View More</a>
+				<div class="cta-row" style="margin-top:28px;">
+					<a href="https://www.linkedin.com/in/rivindu-ashinsa/details/certifications/" class="btn btn-line" target="_blank" rel="noopener noreferrer" aria-label="View more certificates on LinkedIn">view more</a>
 				</div>
 			</div>
 		</section>
 
-		<!-- Achievements section -->
-		<section id="achievements" class="section reveal" aria-labelledby="achievements-title">
-			<div class="container">
+		<!-- Achievements -->
+		<section id="achievements" class="section" aria-labelledby="achievements-title">
+			<div class="wrap">
+				<p class="eyebrow"><span class="blip" aria-hidden="true"></span>log</p>
 				<h2 id="achievements-title">Achievements</h2>
-				<div class="grid-3" data-stagger>
-					<article class="achievement glass">
+				<div class="log-grid" data-stagger style="margin-top:32px;">
+					<article class="panel log-card">
 						<h3>IntelliHack 5.0 Finalist</h3>
 						<img src="assets/images/achievements/intellihackAch.jfif" alt="IntelliHack 5.0 team OutlierRejects" loading="lazy" />
 						<p>Top 10 finalist out of 350+ teams for predictive solutions. Team: OutlierRejects.</p>
-						<span class="achievement-meta">IEEE UCSC</span>
+						<span class="log-meta">IEEE UCSC</span>
 					</article>
-					<article class="achievement glass">
+					<article class="panel log-card">
 						<h3>DataStorm 6.0 Finalist</h3>
 						<img src="assets/images/achievements/datastormAch.jfif" alt="DataStorm 6.0 team DeepCell" loading="lazy" />
 						<p>Top 10 finalist in business analytics and data visualization. Team: DeepCell.</p>
-						<span class="achievement-meta">Rotaract</span>
+						<span class="log-meta">Rotaract</span>
 					</article>
-					<article class="achievement glass">
+					<article class="panel log-card">
 						<h3>Hult Prize</h3>
 						<img src="assets/images/achievements/hultPrice.jpeg" alt="CognivusLabs team pitching at the Hult Prize qualifier round startup competition" loading="lazy" decoding="async" />
-						<p>
-							Participated in the Hult Prize qualifier round and pitched our CognivusLabs product.
-							<a href="https://www.hultprize.org/competition" target="_blank" rel="noopener noreferrer" aria-label="Hult Prize startup competition qualifier details">Hult Prize competition details</a>.
-						</p>
-						<span class="achievement-meta">CognivusLabs</span>
+						<p>Participated in the Hult Prize qualifier round and pitched our CognivusLabs product. <a href="https://www.hultprize.org/competition" target="_blank" rel="noopener noreferrer" style="color:var(--trace);" aria-label="Hult Prize startup competition qualifier details">Competition details</a>.</p>
+						<span class="log-meta">CognivusLabs</span>
 					</article>
-					<article class="achievement glass">
+					<article class="panel log-card">
 						<h3>Academic Excellence</h3>
 						<p>Achieved 9 A grades in GCE Ordinary Level Examination.</p>
-						<span class="achievement-meta">GCE O/L</span>
+						<span class="log-meta">GCE O/L</span>
 					</article>
-					<article class="achievement glass">
+					<article class="panel log-card">
 						<h3>Biomedical Pipeline</h3>
 						<p>Developed analytics pipeline for CognivusLabs (Westminster SDGP).</p>
-						<span class="achievement-meta">CognivusLabs</span>
+						<span class="log-meta">CognivusLabs</span>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<!-- Blog section -->
-		<section id="blog" class="section reveal" aria-label="Blog">
-			<div class="container">
+		<!-- Blog -->
+		<section id="blog" class="section" aria-label="Blog">
+			<div class="wrap">
+				<p class="eyebrow"><span class="blip" aria-hidden="true"></span>dispatches</p>
 				<h2>Blog</h2>
-				<div class="grid-3" data-stagger>
-					<article class="blog-card glass">
+				<div class="dispatch-grid" data-stagger style="margin-top:32px;">
+					<article class="panel dispatch-card">
 						<span class="badge">Coming Soon</span>
 						<img src="assets/images/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
 						<h3>Building Robust ML Pipelines</h3>
 						<p>Best practices for production-ready ML systems.</p>
-						<div class="meta">5 min read • ML</div>
+						<div class="dispatch-meta">5 min read &middot; ML</div>
 					</article>
-					<article class="blog-card glass">
+					<article class="panel dispatch-card">
 						<span class="badge">Coming Soon</span>
 						<img src="assets/images/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
 						<h3>Data Storytelling with Python</h3>
 						<p>Communicate insights with clarity and impact.</p>
-						<div class="meta">6 min read • Data</div>
+						<div class="dispatch-meta">6 min read &middot; Data</div>
 					</article>
-					<article class="blog-card glass">
+					<article class="panel dispatch-card">
 						<span class="badge">Coming Soon</span>
 						<img src="assets/images/blog/coming-soon.svg" alt="Coming soon" loading="lazy" />
 						<h3>From Notebook to Deployment</h3>
 						<p>Steps to ship ML models confidently.</p>
-						<div class="meta">7 min read • MLOps</div>
+						<div class="dispatch-meta">7 min read &middot; MLOps</div>
 					</article>
 				</div>
 			</div>
 		</section>
 
-		<!-- Contact section -->
-		<section id="contact" class="section reveal" aria-label="Contact information">
-			<div class="container contact-layout">
-				<div class="contact-card glass" data-animate>
+		<!-- Contact -->
+		<section id="contact" class="section" aria-label="Contact information">
+			<div class="wrap contact-grid">
+				<div class="contact-info" data-reveal>
+					<p class="eyebrow"><span class="blip" aria-hidden="true"></span>connect</p>
 					<h2>Get in Touch</h2>
-					<p>Let’s collaborate on impactful data science and analytics projects. See the latest work in the <a href="#projects">projects section</a>.</p>
+					<p>Let&rsquo;s collaborate on impactful data science and analytics projects. See the latest work in the <a href="#projects">case files</a>.</p>
 
-					<div class="contact-group">
+					<div class="info-block">
 						<h3>Contact Details</h3>
-						<div class="contact-details">
-							<div>
-								<span class="label">Location</span>
-								<p>Western Province, Sri Lanka</p>
-							</div>
-							<div>
-								<span class="label">Email</span>
-								<p><a href="mailto:ashinsa.rivindu@gmail.com">ashinsa.rivindu@gmail.com</a></p>
-							</div>
-							<div>
-								<span class="label">Phone</span>
-								<p><a href="tel:+94752691645">+94 752 691 645</a></p>
-							</div>
-							<div>
-								<span class="label">Website</span>
-								<p><a href="https://rivindu-ashinsa.github.io/">rivindu-ashinsa.github.io</a></p>
-							</div>
+						<div class="info-row">
+							<div><span class="label">Location</span><p>Western Province, Sri Lanka</p></div>
+							<div><span class="label">Email</span><p><a href="mailto:ashinsa.rivindu@gmail.com">ashinsa.rivindu@gmail.com</a></p></div>
+							<div><span class="label">Phone</span><p><a href="tel:+94752691645">+94 752 691 645</a></p></div>
+							<div><span class="label">Website</span><p><a href="https://rivindu-ashinsa.github.io/">rivindu-ashinsa.github.io</a></p></div>
 						</div>
 					</div>
 
-					<div class="contact-group">
+					<div class="profiles-block">
 						<h3>Profiles</h3>
 						<ul class="profile-list" aria-label="Profile links">
-							<li>
-								<a href="https://www.linkedin.com/in/rivindu-ashinsa/" rel="noopener noreferrer" target="_blank">
-									<i class="fa-brands fa-linkedin"></i>
-									<span>Rivindu Ashinsa on LinkedIn</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/rivindu-ashinsa" rel="noopener noreferrer" target="_blank">
-									<i class="fa-brands fa-github"></i>
-									<span>Rivindu Ashinsa's GitHub</span>
-								</a>
-							</li>
-							<li>
-								<a href="https://kaggle.com/yourprofile" rel="noopener noreferrer" target="_blank">
-									<i class="fa-brands fa-kaggle"></i>
-									<span>Rivindu Ashinsa on Kaggle</span>
-								</a>
-							</li>
+							<li><a href="https://www.linkedin.com/in/rivindu-ashinsa/" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin"></i><span>Rivindu Ashinsa on LinkedIn</span></a></li>
+							<li><a href="https://github.com/rivindu-ashinsa" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i><span>Rivindu Ashinsa's GitHub</span></a></li>
+							<li><a href="https://kaggle.com/yourprofile" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-kaggle"></i><span>Rivindu Ashinsa on Kaggle</span></a></li>
 						</ul>
 					</div>
 
-					<div class="contact-group" aria-label="Share">
+					<div class="share-block" aria-label="Share">
 						<h3>Share</h3>
 						<div class="share-buttons">
 							<a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frivindu-ashinsa.github.io%2F" rel="noopener noreferrer" target="_blank">Share on LinkedIn</a>
@@ -603,35 +532,31 @@
 
 					<p class="last-updated">Last updated: February 8, 2026</p>
 				</div>
-				<form id="contact-form" class="glass" action="https://formspree.io/f/mykdyalb" method="POST">
+
+				<form id="contact-form" class="panel intake-form" data-reveal action="https://formspree.io/f/mykdyalb" method="POST">
 					<input type="hidden" name="_subject" value="New portfolio message from rivindu-ashinsa.github.io" />
 					<input type="hidden" name="_captcha" value="false" />
-					<label>
-						Name
-						<input type="text" name="name" required aria-required="true" autocomplete="name" />
-					</label>
-					<label>
-						Email
-						<input type="email" name="email" required aria-required="true" autocomplete="email" />
-					</label>
-					<label>
-						Message
-						<textarea name="message" rows="5" required aria-required="true"></textarea>
-					</label>
-					<button type="submit" class="btn primary">Send Message</button>
+					<label>Name<input type="text" name="name" required aria-required="true" autocomplete="name" /></label>
+					<label>Email<input type="email" name="email" required aria-required="true" autocomplete="email" /></label>
+					<label>Message<textarea name="message" rows="5" required aria-required="true"></textarea></label>
+					<button type="submit" class="btn btn-solid">send message</button>
 					<p class="form-status" role="status" aria-live="polite"></p>
 				</form>
 			</div>
 		</section>
 	</main>
 
-	<!-- Footer -->
 	<footer class="footer">
-		<div class="container footer-inner">
-			<p>© 2025 Rivindu Ashinsa. All rights reserved.</p>
+		<div class="wrap footer-inner">
+			<div class="wave-divider" aria-hidden="true" style="height:34px;">
+				<svg viewBox="0 0 400 120" preserveAspectRatio="none">
+					<polyline class="ecg-trace ecg-path" points="0,60 20,60 30,54 40,60 48,68 54,14 60,100 66,60 76,60 86,64 96,48 106,64 116,60 200,60 220,60 230,54 240,60 248,68 254,14 260,100 266,60 276,60 286,64 296,48 306,64 316,60 400,60" style="animation:ecgScroll 3.2s linear infinite; width:200%;" />
+				</svg>
+			</div>
+			<p>&copy; 2025 Rivindu Ashinsa. All rights reserved.</p>
 			<div class="footer-links" aria-label="Quick links">
 				<a href="#about">About</a>
-				<a href="#projects">Projects</a>
+				<a href="#projects">Case files</a>
 				<a href="#contact">Contact</a>
 			</div>
 			<div class="footer-socials" aria-label="Social links">
@@ -639,7 +564,7 @@
 				<a href="https://github.com/rivindu-ashinsa" aria-label="GitHub" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i></a>
 				<a href="https://kaggle.com/yourprofile" aria-label="Kaggle" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
 			</div>
-			<button class="back-to-top" aria-label="Back to top">↑</button>
+			<button class="back-to-top" aria-label="Back to top">&uarr;</button>
 		</div>
 	</footer>
 
