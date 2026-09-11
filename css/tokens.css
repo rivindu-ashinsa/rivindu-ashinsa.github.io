@@ -1,0 +1,70 @@
+/* Atlas tokens — professional studio desk */
+:root {
+  --paper: #f3efe6;
+  --paper-2: #ebe6db;
+  --ink: #1c1b16;
+  --ink-soft: #4a463c;
+  --ink-faint: #7a7468;
+  --rule: rgba(28, 27, 22, 0.12);
+  --rule-strong: rgba(28, 27, 22, 0.28);
+  --forest: #1f4d3a;
+  --forest-deep: #163628;
+  --moss: #3d7a5c;
+  --copper: #b85c38;
+  --copper-soft: rgba(184, 92, 56, 0.12);
+  --live: #2f6f4e;
+  --card: #fbf8f1;
+  --card-ink: #1c1b16;
+  --shadow: 0 18px 40px rgba(28, 27, 22, 0.08);
+  --rail-width: 248px;
+  --mast-height: 64px;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --paper: #121410;
+  --paper-2: #181b16;
+  --ink: #efe9dc;
+  --ink-soft: #c4bbaa;
+  --ink-faint: #8d8778;
+  --rule: rgba(239, 233, 220, 0.1);
+  --rule-strong: rgba(239, 233, 220, 0.22);
+  --forest: #7dcea0;
+  --forest-deep: #b7e4c7;
+  --moss: #95d5b2;
+  --copper: #e09a74;
+  --copper-soft: rgba(224, 154, 116, 0.14);
+  --live: #7dcea0;
+  --card: #1a1e19;
+  --card-ink: #efe9dc;
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-theme]) {
+    --paper: #121410;
+    --paper-2: #181b16;
+    --ink: #efe9dc;
+    --ink-soft: #c4bbaa;
+    --ink-faint: #8d8778;
+    --rule: rgba(239, 233, 220, 0.1);
+    --rule-strong: rgba(239, 233, 220, 0.22);
+    --forest: #7dcea0;
+    --forest-deep: #b7e4c7;
+    --moss: #95d5b2;
+    --copper: #e09a74;
+    --copper-soft: rgba(224, 154, 116, 0.14);
+    --live: #7dcea0;
+    --card: #1a1e19;
+    --card-ink: #efe9dc;
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+    color-scheme: dark;
+  }
+}

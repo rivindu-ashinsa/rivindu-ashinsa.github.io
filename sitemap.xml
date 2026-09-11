@@ -1,20 +1,244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
-  <!-- Homepage -->
   <url>
     <loc>https://rivindu-ashinsa.github.io/</loc>
-    <lastmod>2026-04-01</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/dashboard%20vitals.png</image:loc>
+      <image:title>Cognivus Labs vitals dashboard showing live ECG and SpO2 monitoring</image:title>
+      <image:caption>Cognivus Labs vitals dashboard showing live ECG and SpO2 monitoring</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/fortiq/fortiq.png</image:loc>
+      <image:title>Fortiq gym management SaaS dashboard cover</image:title>
+      <image:caption>Fortiq gym management SaaS dashboard cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/webanalyser/webanalyser.png</image:loc>
+      <image:title>AI-powered website audit tool interface</image:title>
+      <image:caption>AI-powered website audit tool interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png</image:loc>
+      <image:title>RepoDigest AI-powered code analysis application cover</image:title>
+      <image:caption>RepoDigest AI-powered code analysis application cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/me-removebg-preview.png</image:loc>
+      <image:title>Portrait of Rivindu Ashinsa, machine learning engineer and data scientist</image:title>
+      <image:caption>Portrait of Rivindu Ashinsa, machine learning engineer and data scientist</image:caption>
+    </image:image>
   </url>
-
-  <!-- Blog post -->
   <url>
-    <loc>https://rivindu-ashinsa.github.io/blog-1.html</loc>
-    <lastmod>2026-04-01</lastmod>
+    <loc>https://rivindu-ashinsa.github.io/updates/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/linkedin/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/wearable%20patch.jpeg</image:loc>
+      <image:title>Cognivus Labs wearable patch used for ECG and SpO2 sensing</image:title>
+      <image:caption>Cognivus Labs wearable patch used for ECG and SpO2 sensing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/webanalyser/webanalyser.png</image:loc>
+      <image:title>Interface of an AI tooling product with structured outputs</image:title>
+      <image:caption>Interface of an AI tooling product with structured outputs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/achievements/intellihackAch.jfif</image:loc>
+      <image:title>IntelliHack 5.0 team OutlierRejects at the finals</image:title>
+      <image:caption>IntelliHack 5.0 team OutlierRejects at the finals</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/certificates/AI%20and%20vector%20search.jpg</image:loc>
+      <image:title>MongoDB AI and Vector Search certificate awarded to Rivindu Ashinsa</image:title>
+      <image:caption>MongoDB AI and Vector Search certificate awarded to Rivindu Ashinsa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/achievements/hultPrice.jpeg</image:loc>
+      <image:title>Cognivus Labs team pitching at the Hult Prize qualifier</image:title>
+      <image:caption>Cognivus Labs team pitching at the Hult Prize qualifier</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/apps/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/dashboard%20vitals.png</image:loc>
+      <image:title>Cognivus Labs vitals dashboard showing live ECG and SpO2 monitoring</image:title>
+      <image:caption>Cognivus Labs vitals dashboard showing live ECG and SpO2 monitoring</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/fortiq/fortiq.png</image:loc>
+      <image:title>Fortiq gym management SaaS dashboard cover</image:title>
+      <image:caption>Fortiq gym management SaaS dashboard cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/webanalyser/webanalyser.png</image:loc>
+      <image:title>AI-powered website audit tool interface</image:title>
+      <image:caption>AI-powered website audit tool interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png</image:loc>
+      <image:title>RepoDigest AI-powered code analysis application cover</image:title>
+      <image:caption>RepoDigest AI-powered code analysis application cover</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/suggested/</loc>
+    <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/learning/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/work/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/wearable%20patch.jpeg</image:loc>
+      <image:title>Cognivus Labs wearable patch device for ECG and SpO2 sensing</image:title>
+      <image:caption>Cognivus Labs wearable patch device for ECG and SpO2 sensing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/aiinsightdashboard.png</image:loc>
+      <image:title>Cognivus Labs AI insight dashboard</image:title>
+      <image:caption>Cognivus Labs AI insight dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/dashboard%20vitals.png</image:loc>
+      <image:title>Cognivus Labs vitals dashboard</image:title>
+      <image:caption>Cognivus Labs vitals dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/doctor%20dashboard.png</image:loc>
+      <image:title>Cognivus Labs doctor dashboard</image:title>
+      <image:caption>Cognivus Labs doctor dashboard</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/marketingsite.png</image:loc>
+      <image:title>Cognivus Labs marketing website</image:title>
+      <image:caption>Cognivus Labs marketing website</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/real%20time%20notification.png</image:loc>
+      <image:title>Cognivus Labs real-time notification interface</image:title>
+      <image:caption>Cognivus Labs real-time notification interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/time%20stamp.png</image:loc>
+      <image:title>Cognivus Labs time-stamped clinical events</image:title>
+      <image:caption>Cognivus Labs time-stamped clinical events</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/vitalshistory.png</image:loc>
+      <image:title>Cognivus Labs vitals history view</image:title>
+      <image:caption>Cognivus Labs vitals history view</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/cross%20browser.png</image:loc>
+      <image:title>Cognivus Labs cross-browser monitoring interface</image:title>
+      <image:caption>Cognivus Labs cross-browser monitoring interface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/cognivuslabs/Youtube%20Demo%20Thumbnail.png</image:loc>
+      <image:title>Cognivus Labs SDGP demo video thumbnail</image:title>
+      <image:caption>Cognivus Labs SDGP demo video thumbnail</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/fortiq/fortiq.png</image:loc>
+      <image:title>Fortiq multi-tenant gym management platform cover</image:title>
+      <image:caption>Fortiq multi-tenant gym management platform cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/webanalyser/webanalyser.png</image:loc>
+      <image:title>AI-powered website audit tool project cover</image:title>
+      <image:caption>AI-powered website audit tool project cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png</image:loc>
+      <image:title>RepoDigest AI-powered code analysis cover</image:title>
+      <image:caption>RepoDigest AI-powered code analysis cover</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/dimentia/dimentia_thumbnail.png</image:loc>
+      <image:title>Dementia risk prediction analysis thumbnail</image:title>
+      <image:caption>Dementia risk prediction analysis thumbnail</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/projects/heartDisease/heartdisease.png</image:loc>
+      <image:title>Heart disease prediction analysis cover</image:title>
+      <image:caption>Heart disease prediction analysis cover</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/studio/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/me-removebg-preview.png</image:loc>
+      <image:title>Portrait of Rivindu Ashinsa, machine learning engineer and data scientist</image:title>
+      <image:caption>Portrait of Rivindu Ashinsa, machine learning engineer and data scientist</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/credentials/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/certificates/Associate%20Data%20Scientist.jpg</image:loc>
+      <image:title>DataCamp Data Scientist Associate certificate awarded to Rivindu Ashinsa</image:title>
+      <image:caption>DataCamp Data Scientist Associate certificate awarded to Rivindu Ashinsa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/certificates/data%20anallysis%20freecodecamp.png</image:loc>
+      <image:title>freeCodeCamp Data Analysis with Python certificate awarded to Rivindu Ashinsa</image:title>
+      <image:caption>freeCodeCamp Data Analysis with Python certificate awarded to Rivindu Ashinsa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/certificates/AI%20and%20vector%20search.jpg</image:loc>
+      <image:title>MongoDB AI and Vector Search certificate awarded to Rivindu Ashinsa</image:title>
+      <image:caption>MongoDB AI and Vector Search certificate awarded to Rivindu Ashinsa</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/achievements/intellihackAch.jfif</image:loc>
+      <image:title>IntelliHack 5.0 team OutlierRejects at the competition</image:title>
+      <image:caption>IntelliHack 5.0 team OutlierRejects at the competition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/achievements/datastormAch.jfif</image:loc>
+      <image:title>DataStorm 6.0 team DeepCell at the analytics competition</image:title>
+      <image:caption>DataStorm 6.0 team DeepCell at the analytics competition</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rivindu-ashinsa.github.io/assets/images/achievements/hultPrice.jpeg</image:loc>
+      <image:title>Cognivus Labs team pitching at the Hult Prize qualifier round</image:title>
+      <image:caption>Cognivus Labs team pitching at the Hult Prize qualifier round</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://rivindu-ashinsa.github.io/contact/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

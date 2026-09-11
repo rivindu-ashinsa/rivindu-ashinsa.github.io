@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap
 Sitemap: https://rivindu-ashinsa.github.io/sitemap.xml

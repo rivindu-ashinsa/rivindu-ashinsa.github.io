@@ -1,0 +1,59 @@
+{
+  "name": "Rivindu Ashinsa",
+  "short": "RA",
+  "handle": "rivindu.ashinsa",
+  "title": "ML Engineer & Data Scientist",
+  "tagline": "I turn messy signals into decision-ready insight — ECG waveforms, clinical streams, and datasets that have to hold up outside the notebook.",
+  "url": "https://rivindu-ashinsa.github.io",
+  "email": "ashinsa.rivindu@gmail.com",
+  "phone": "+94 752 691 645",
+  "phoneHref": "+94752691645",
+  "location": "Western Province, Sri Lanka",
+  "availability": "Open to ML / data science collaborations",
+  "resume": "resume/RivinduAshinsaResumeGenAI.pdf",
+  "portrait": "me-removebg-preview.png",
+  "logo": "favicon-new.png",
+  "ogImage": "favicon.jpg",
+  "updated": "2026-09-11",
+  "socials": [
+    { "id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/rivindu-ashinsa/" },
+    { "id": "github", "label": "GitHub", "href": "https://github.com/rivindu-ashinsa" },
+    { "id": "kaggle", "label": "Kaggle", "href": "https://www.kaggle.com/rivinduashinsa" }
+  ],
+  "nav": [
+    {
+      "group": "Now",
+      "items": [
+        { "id": "home", "label": "Desk", "path": "", "hint": "Live briefing" },
+        { "id": "updates", "label": "Updates", "path": "updates/", "hint": "Latest signal" },
+        { "id": "linkedin", "label": "LinkedIn", "path": "linkedin/", "hint": "Public notes" },
+        { "id": "learning", "label": "Learning", "path": "learning/", "hint": "Deep learning log" }
+      ]
+    },
+    {
+      "group": "Build",
+      "items": [
+        { "id": "apps", "label": "My Apps", "path": "apps/", "hint": "Shipped products" },
+        { "id": "suggested", "label": "Suggested", "path": "suggested/", "hint": "Tools I trust" },
+        { "id": "work", "label": "Case Files", "path": "work/", "hint": "Project archive" }
+      ]
+    },
+    {
+      "group": "Studio",
+      "items": [
+        { "id": "studio", "label": "Profile", "path": "studio/", "hint": "Bio & stack" },
+        { "id": "credentials", "label": "Credentials", "path": "credentials/", "hint": "Proof of work" },
+        { "id": "contact", "label": "Contact", "path": "contact/", "hint": "Open a channel" }
+      ]
+    }
+  ],
+  "knowsAbout": [
+    "Machine Learning",
+    "Data Science",
+    "Deep Learning",
+    "Healthcare AI",
+    "TensorFlow",
+    "Python",
+    "Model Context Protocol"
+  ]
+}

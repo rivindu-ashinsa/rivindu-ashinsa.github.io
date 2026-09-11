@@ -1,0 +1,93 @@
+{
+  "title": "Deep Learning Log",
+  "lede": "A public notebook of what I am actually studying — not a course dump. Each entry is a concept I had to make work on real signals or real tools.",
+  "items": [
+    {
+      "id": "learn-ecg-cnn",
+      "date": "2026-07-18",
+      "status": "active",
+      "track": "Signals",
+      "title": "1-D CNNs on ECG abnormality detection",
+      "summary": "How far a compact 1-D conv stack can go on noisy wearable ECG before you reach for attention. Focus: class imbalance, patient-wise splits, and not leaking adjacent windows.",
+      "notes": [
+        "Patient-level splits beat random windows; otherwise the model memorizes a person’s baseline.",
+        "Morphology artifacts from motion look like PVCs until you condition on signal quality.",
+        "Explainability for clinicians means highlighting the beat, not a Grad-CAM theatre."
+      ],
+      "resources": [
+        { "label": "Cognivus case file", "href": "work/" }
+      ]
+    },
+    {
+      "id": "learn-spo2",
+      "date": "2026-07-02",
+      "status": "active",
+      "track": "Forecasting",
+      "title": "SpO2 deterioration as a time-series problem",
+      "summary": "Forecasting a drop is different from classifying a snapshot. Working through horizon choice, calibration, and when a simple lag model beats an LSTM.",
+      "notes": [
+        "A 15-minute horizon is clinically more honest than a 2-hour fantasy.",
+        "Missing packets from BLE are a feature of the world, not a preprocessing footnote.",
+        "Risk scores need confidence bands a doctor can ignore."
+      ],
+      "resources": []
+    },
+    {
+      "id": "learn-xai",
+      "date": "2026-06-12",
+      "status": "paused",
+      "track": "Explainability",
+      "title": "Multi-biomarker risk scores that can be challenged",
+      "summary": "Combining ECG, SpO2, and vitals into one number is easy. Keeping the contribution of each channel inspectable is the actual research question.",
+      "notes": [
+        "Additive explanations fail when the channels are physically coupled.",
+        "A rule layer on top of the net is often what the ward will accept."
+      ],
+      "resources": []
+    },
+    {
+      "id": "learn-mcp",
+      "date": "2026-08-15",
+      "status": "active",
+      "track": "Systems",
+      "title": "MCP: tool schemas as the real interface",
+      "summary": "Internship work at Zelora. Treating Model Context Protocol servers as typed API products — auth, idempotency, and error shapes included.",
+      "notes": [
+        "If the model can delete, the tool needs a dry-run.",
+        "JSON Schema is the prompt. Descriptions are not comments; they are UX.",
+        "Logging tool calls is how you debug an agent without arguing with it."
+      ],
+      "resources": [
+        { "label": "MCP spec", "href": "https://modelcontextprotocol.io/" }
+      ]
+    },
+    {
+      "id": "learn-transformers-ts",
+      "date": "2026-05-28",
+      "status": "done",
+      "track": "Architecture",
+      "title": "When transformers help time series — and when they do not",
+      "summary": "Worked through patching, positional encodings, and why a 12-lead hospital ECG is not the same problem as a single-lead patch.",
+      "notes": [
+        "PatchTST-style chunking helped more than going deeper.",
+        "On short wearable windows, a CNN still won on latency."
+      ],
+      "resources": []
+    },
+    {
+      "id": "learn-vectors",
+      "date": "2026-05-14",
+      "status": "done",
+      "track": "Retrieval",
+      "title": "Embeddings, chunking, and evaluation for vector search",
+      "summary": "MongoDB AI and Vector Search path, applied: a retrieval set is a dataset. If you cannot say what “relevant” means, you do not have RAG.",
+      "notes": [
+        "Chunk by meaning, not by token count alone.",
+        "Always keep a frozen eval pack of questions."
+      ],
+      "resources": [
+        { "label": "Certificate", "href": "credentials/" }
+      ]
+    }
+  ]
+}

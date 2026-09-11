@@ -1,0 +1,124 @@
+{
+  "title": "Case Files",
+  "lede": "Selected work with the evidence attached — demos, repos, and the screens the system actually shows.",
+  "items": [
+    {
+      "id": "cognivus",
+      "featured": true,
+      "category": "ds",
+      "title": "Cognivus Labs — digital health monitoring",
+      "tag": "Flagship · data science · SDGP",
+      "summary": "End-to-end platform connecting wearable IoT sensing, clinical backend services, and AI decision support. I owned the full AI/ML track: research, preprocessing, inference architecture, backend integration, and production-ready clinical outputs.",
+      "points": [
+        "Streams ECG and SpO2 from ESP32 wearable patches through secure WebSocket/REST pipelines.",
+        "Live monitoring for doctors, staff, and administrators across web and mobile.",
+        "ML for ECG abnormality detection, SpO2 deterioration forecasting, and explainable multi-biomarker risk scoring."
+      ],
+      "image": "assets/images/projects/cognivuslabs/wearable patch.jpeg",
+      "imageAlt": "Cognivus Labs wearable patch device for ECG and SpO2 sensing",
+      "width": 1008,
+      "height": 1070,
+      "demoThumb": "assets/images/projects/cognivuslabs/Youtube Demo Thumbnail.png",
+      "demoThumbAlt": "Cognivus Labs SDGP demo video thumbnail",
+      "demoWidth": 1376,
+      "demoHeight": 768,
+      "demoHref": "https://youtu.be/tj5HIRvgtc8",
+      "tags": ["Embedded Systems", "Backend Pipelines", "ML Analytics", "Realtime Monitoring"],
+      "links": [
+        { "label": "Demo video", "href": "https://youtu.be/tj5HIRvgtc8", "icon": "play" },
+        { "label": "Official site", "href": "https://cognivusmed.com/", "icon": "globe" },
+        { "label": "GitHub", "href": "https://github.com/EdgeVitalsAI/Cognivus-Labs-Dev", "icon": "github" },
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cognivuslabs/", "icon": "linkedin" },
+        { "label": "Instagram", "href": "https://www.instagram.com/cognivuslabs/", "icon": "instagram" }
+      ],
+      "gallery": [
+        { "src": "assets/images/projects/cognivuslabs/aiinsightdashboard.png", "alt": "Cognivus Labs AI insight dashboard", "caption": "AI Insight Dashboard", "width": 1906, "height": 872 },
+        { "src": "assets/images/projects/cognivuslabs/dashboard vitals.png", "alt": "Cognivus Labs vitals dashboard", "caption": "Vitals Dashboard", "width": 1631, "height": 988 },
+        { "src": "assets/images/projects/cognivuslabs/doctor dashboard.png", "alt": "Cognivus Labs doctor dashboard", "caption": "Doctor Dashboard", "width": 1889, "height": 996 },
+        { "src": "assets/images/projects/cognivuslabs/marketingsite.png", "alt": "Cognivus Labs marketing website", "caption": "Marketing Site", "width": 1918, "height": 868 },
+        { "src": "assets/images/projects/cognivuslabs/real time notification.png", "alt": "Cognivus Labs real-time notification interface", "caption": "Realtime Notifications", "width": 1889, "height": 976 },
+        { "src": "assets/images/projects/cognivuslabs/time stamp.png", "alt": "Cognivus Labs time-stamped clinical events", "caption": "Time Stamped Events", "width": 1889, "height": 976 },
+        { "src": "assets/images/projects/cognivuslabs/vitalshistory.png", "alt": "Cognivus Labs vitals history view", "caption": "Vitals History", "width": 1893, "height": 878 },
+        { "src": "assets/images/projects/cognivuslabs/cross browser.png", "alt": "Cognivus Labs cross-browser monitoring interface", "caption": "Cross Browser View", "width": 1916, "height": 1032 }
+      ]
+    },
+    {
+      "id": "fortiq",
+      "featured": false,
+      "category": "product",
+      "title": "Fortiq",
+      "tag": "Product · SaaS",
+      "summary": "Multi-tenant platform for gym and fitness center management — memberships, billing, and staff operations across multiple sites.",
+      "image": "assets/images/projects/fortiq/fortiq.png",
+      "imageAlt": "Fortiq multi-tenant gym management platform cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["Multi-tenant Architecture", "SaaS", "Full-Stack"],
+      "links": []
+    },
+    {
+      "id": "webaudit",
+      "featured": false,
+      "category": "ml",
+      "title": "AI-Powered Website Audit Tool",
+      "tag": "ML · GenAI",
+      "summary": "FastAPI backend that audits webpages, computes factual metrics, and delivers LLM recommendations on top of measured scores.",
+      "image": "assets/images/projects/webanalyser/webanalyser.png",
+      "imageAlt": "AI-powered website audit tool project cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["FastAPI", "Python", "LLM Integration", "Web Scraping"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/rivindu-ashinsa/AI-Powered-Web-site-Audit-Tool" },
+        { "label": "Try it", "href": "https://rivindu-ashinsa.github.io/AI-Powered-Web-site-Audit-Tool" }
+      ]
+    },
+    {
+      "id": "repodigest",
+      "featured": false,
+      "category": "ml",
+      "title": "RepoDigest — AI code analysis",
+      "tag": "ML · GenAI",
+      "summary": "LangGraph + GenAI app that analyzes repositories and returns structured insights.",
+      "image": "assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png",
+      "imageAlt": "RepoDigest AI-powered code analysis cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["Python", "LangGraph", "OpenAI API"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/rivindu-ashinsa/RepoDigest" },
+        { "label": "Try it", "href": "https://rivindu-ashinsa.github.io/RepoDigest/" }
+      ]
+    },
+    {
+      "id": "dementia",
+      "featured": false,
+      "category": "ds",
+      "title": "Dementia Risk Prediction",
+      "tag": "Data science",
+      "summary": "Exploratory analysis and feature selection for dementia risk indicators with Team XPredators.",
+      "image": "assets/images/projects/dimentia/dimentia_thumbnail.png",
+      "imageAlt": "Dementia risk prediction analysis thumbnail",
+      "width": 1376,
+      "height": 768,
+      "tags": ["EDA", "Pandas", "Statistics"],
+      "links": [
+        { "label": "GitHub", "href": "https://github.com/Team-XPredators/Dementia-Prediction-xpredators" }
+      ]
+    },
+    {
+      "id": "heart",
+      "featured": false,
+      "category": "ds",
+      "title": "Heart Disease Prediction",
+      "tag": "Data science",
+      "summary": "Statistical analysis on 1,000+ records to surface biomarkers associated with heart disease risk.",
+      "image": "assets/images/projects/heartDisease/heartdisease.png",
+      "imageAlt": "Heart disease prediction analysis cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["SQL", "Statistics", "Validation"],
+      "links": []
+    }
+  ]
+}

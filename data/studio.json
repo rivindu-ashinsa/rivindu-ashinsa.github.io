@@ -1,0 +1,58 @@
+{
+  "title": "Studio",
+  "lede": "Who I am when the dashboards are off — education, the current role, and the stack I keep sharp.",
+  "about": {
+    "headline": "I turn messy signals into decision-ready insight.",
+    "body": [
+      "Whether that signal is a literal ECG waveform off a wearable patch, or a dataset that needs cleaning before anyone can trust a conclusion — the job is the same: clarity, reproducibility, and models that hold up outside the notebook.",
+      "I care about reports a stakeholder can act on, analysis another engineer can rerun, and datasets that do not lie by omission."
+    ],
+    "values": [
+      "Clear reporting with actionable takeaways",
+      "Well-documented, repeatable analysis",
+      "Clean datasets that enable reliable decisions"
+    ],
+    "chips": ["Data Cleaning", "Exploratory Analysis", "Visualization", "Statistical Methods", "Healthcare AI"]
+  },
+  "identity": {
+    "photo": "me-removebg-preview.png",
+    "photoAlt": "Portrait of Rivindu Ashinsa, machine learning engineer and data scientist",
+    "width": 483,
+    "height": 516,
+    "lines": [
+      "Western Province, Sri Lanka",
+      "ML Engineer & Data Scientist",
+      "BSc (Hons) Computer Science"
+    ]
+  },
+  "education": [
+    {
+      "time": "Sep 2024 – Jun 2028 (expected)",
+      "title": "BSc (Hons) Computer Science",
+      "place": "University of Westminster, United Kingdom"
+    },
+    {
+      "time": "Sep 2023 – May 2024",
+      "title": "Foundation in Information Technology",
+      "place": "Informatics Institute of Technology (IIT), Sri Lanka"
+    }
+  ],
+  "experience": [
+    {
+      "time": "Present",
+      "title": "AI Engineer Intern",
+      "company": "Zelora (Appoyo)",
+      "status": "active",
+      "summary": "Working mainly on MCP (Model Context Protocol) servers — building and integrating the tool layer that lets AI systems act on real data and services.",
+      "chips": ["MCP Servers", "AI Tooling", "API Integration"]
+    }
+  ],
+  "skills": [
+    { "title": "Languages", "items": ["Python", "SQL (MySQL, MariaDB)", "R", "Java"] },
+    { "title": "Analysis & cleaning", "items": ["Pandas", "NumPy", "SciPy", "Feature Engineering"] },
+    { "title": "Visualization", "items": ["Matplotlib", "Seaborn", "Power BI", "Dashboarding"] },
+    { "title": "Machine learning", "items": ["scikit-learn", "TensorFlow", "Keras", "XGBoost"] },
+    { "title": "Tooling", "items": ["Git", "GitHub", "Jupyter", "VS Code / Cursor", "Streamlit", "Linux"] },
+    { "title": "Practice", "items": ["Data Cleaning", "Analytical Thinking", "Visualization", "Statistics", "Decision Support"] }
+  ]
+}

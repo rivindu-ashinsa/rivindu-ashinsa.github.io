@@ -1,0 +1,102 @@
+{
+  "title": "Suggested Apps",
+  "lede": "The stack I actually reach for. Not a listicle — a short why for each tool, from training runs to shipping MCP servers.",
+  "items": [
+    {
+      "id": "sug-cursor",
+      "name": "Cursor",
+      "category": "Build",
+      "why": "The editor I use to keep a file-based codebase moving: agents on the boring refactors, me on the architecture.",
+      "href": "https://cursor.com/",
+      "tags": ["Editor", "Agents"]
+    },
+    {
+      "id": "sug-python",
+      "name": "Python 3",
+      "category": "Language",
+      "why": "Still the shortest path from a messy CSV to a model that a clinician or an intern can rerun.",
+      "href": "https://www.python.org/",
+      "tags": ["Core"]
+    },
+    {
+      "id": "sug-tf",
+      "name": "TensorFlow / Keras",
+      "category": "Deep learning",
+      "why": "What I use when a waveform model has to leave the notebook and sit behind a live inference path.",
+      "href": "https://www.tensorflow.org/",
+      "tags": ["ECG", "Training"]
+    },
+    {
+      "id": "sug-sklearn",
+      "name": "scikit-learn",
+      "category": "Classical ML",
+      "why": "Baselines first. If XGBoost or a linear model already answers the question, I do not start a neural net.",
+      "href": "https://scikit-learn.org/",
+      "tags": ["Baselines", "Pipelines"]
+    },
+    {
+      "id": "sug-pandas",
+      "name": "Pandas + Polars",
+      "category": "Data",
+      "why": "Cleaning is the job. Pandas for the audit trail, Polars when the frame outgrows memory politeness.",
+      "href": "https://pandas.pydata.org/",
+      "tags": ["EDA", "Cleaning"]
+    },
+    {
+      "id": "sug-fastapi",
+      "name": "FastAPI",
+      "category": "Serve",
+      "why": "Typed Python APIs with OpenAPI for free. The audit tool and most of my model wrappers live here.",
+      "href": "https://fastapi.tiangolo.com/",
+      "tags": ["API", "Inference"]
+    },
+    {
+      "id": "sug-langgraph",
+      "name": "LangGraph",
+      "category": "GenAI",
+      "why": "Graphs beat prompt spaghetti when an agent must inspect a repo, call tools, and stop.",
+      "href": "https://www.langchain.com/langgraph",
+      "tags": ["Agents", "RepoDigest"]
+    },
+    {
+      "id": "sug-mcp",
+      "name": "Model Context Protocol",
+      "category": "AI tooling",
+      "why": "The contract I am implementing at Zelora: tools with schemas, not hidden side effects.",
+      "href": "https://modelcontextprotocol.io/",
+      "tags": ["MCP", "Intern work"]
+    },
+    {
+      "id": "sug-hf",
+      "name": "Hugging Face",
+      "category": "Deep learning",
+      "why": "Weights, datasets, and eval cards in one place. I use it when a paper weight is the starting point, not the finish.",
+      "href": "https://huggingface.co/",
+      "tags": ["Models", "Datasets"]
+    },
+    {
+      "id": "sug-wandb",
+      "name": "Weights & Biases",
+      "category": "MLOps",
+      "why": "If I cannot compare two runs, I do not trust the “improvement”.",
+      "href": "https://wandb.ai/",
+      "tags": ["Experiment tracking"]
+    },
+    {
+      "id": "sug-powerbi",
+      "name": "Power BI",
+      "category": "Reporting",
+      "why": "When the audience is an operations team, a dashboard they already know beats a custom React chart.",
+      "href": "https://www.microsoft.com/power-platform/products/power-bi",
+      "tags": ["BI", "Stakeholders"]
+    },
+    {
+      "id": "sug-github",
+      "name": "GitHub",
+      "category": "Build",
+      "why": "Source of truth for Cognivus, the audit tool, RepoDigest, and this atlas.",
+      "href": "https://github.com/rivindu-ashinsa",
+      "tags": ["Git", "Open source"]
+    }
+  ]
+}

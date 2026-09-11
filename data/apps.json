@@ -1,0 +1,73 @@
+{
+  "title": "My Apps",
+  "lede": "Products I have shipped or am actively building — from clinical monitoring to GenAI tooling.",
+  "items": [
+    {
+      "id": "cognivus",
+      "status": "live",
+      "year": "2025–2026",
+      "title": "Cognivus Labs",
+      "role": "AI / ML track lead",
+      "summary": "Production-grade digital health platform: ESP32 wearable patches stream ECG and SpO2 into clinical dashboards with abnormality detection, deterioration forecasts, and explainable risk scores.",
+      "image": "assets/images/projects/cognivuslabs/dashboard vitals.png",
+      "imageAlt": "Cognivus Labs vitals dashboard showing live ECG and SpO2 monitoring",
+      "width": 1631,
+      "height": 988,
+      "tags": ["Healthcare", "Realtime", "TensorFlow", "IoT"],
+      "links": [
+        { "label": "Website", "href": "https://cognivusmed.com/" },
+        { "label": "Demo", "href": "https://youtu.be/tj5HIRvgtc8" },
+        { "label": "GitHub", "href": "https://github.com/EdgeVitalsAI/Cognivus-Labs-Dev" },
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/company/cognivuslabs/" }
+      ]
+    },
+    {
+      "id": "fortiq",
+      "status": "building",
+      "year": "2026",
+      "title": "Fortiq",
+      "role": "Full-stack",
+      "summary": "Multi-tenant SaaS for gym and fitness operations — memberships, billing, and staff workflows for more than one gym from a single control plane.",
+      "image": "assets/images/projects/fortiq/fortiq.png",
+      "imageAlt": "Fortiq gym management SaaS dashboard cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["SaaS", "Multi-tenant", "Operations"],
+      "links": []
+    },
+    {
+      "id": "webaudit",
+      "status": "live",
+      "year": "2026",
+      "title": "AI Website Audit Tool",
+      "role": "Author",
+      "summary": "FastAPI auditor that computes factual page metrics first, then asks an LLM for recommendations. Keeps the model honest by separating measurement from advice.",
+      "image": "assets/images/projects/webanalyser/webanalyser.png",
+      "imageAlt": "AI-powered website audit tool interface",
+      "width": 1376,
+      "height": 768,
+      "tags": ["FastAPI", "LLM", "Python"],
+      "links": [
+        { "label": "Try it", "href": "https://rivindu-ashinsa.github.io/AI-Powered-Web-site-Audit-Tool" },
+        { "label": "GitHub", "href": "https://github.com/rivindu-ashinsa/AI-Powered-Web-site-Audit-Tool" }
+      ]
+    },
+    {
+      "id": "repodigest",
+      "status": "live",
+      "year": "2026",
+      "title": "RepoDigest",
+      "role": "Author",
+      "summary": "LangGraph application that reads 500+ repositories and returns structured insights instead of an unbounded chat transcript.",
+      "image": "assets/images/projects/repodigest/Gemini_Generated_Image_jbsl9ljbsl9ljbsl.png",
+      "imageAlt": "RepoDigest AI-powered code analysis application cover",
+      "width": 1376,
+      "height": 768,
+      "tags": ["LangGraph", "OpenAI", "GenAI"],
+      "links": [
+        { "label": "Try it", "href": "https://rivindu-ashinsa.github.io/RepoDigest/" },
+        { "label": "GitHub", "href": "https://github.com/rivindu-ashinsa/RepoDigest" }
+      ]
+    }
+  ]
+}

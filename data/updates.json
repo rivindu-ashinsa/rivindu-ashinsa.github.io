@@ -1,0 +1,78 @@
+{
+  "title": "Latest Updates",
+  "lede": "A running log of what shipped, what I am studying, and what went public. Newest first.",
+  "items": [
+    {
+      "id": "upd-2026-09-11-atlas",
+      "date": "2026-09-11",
+      "kind": "site",
+      "title": "Atlas desk — new portfolio architecture",
+      "summary": "Rebuilt this site as a file-based studio: separate channels for updates, LinkedIn notes, apps, suggested tools, and the deep-learning journal.",
+      "href": "",
+      "page": "home"
+    },
+    {
+      "id": "upd-2026-08-zelora",
+      "date": "2026-08-18",
+      "kind": "work",
+      "title": "AI Engineer Intern at Zelora (Appoyo)",
+      "summary": "Building and integrating MCP servers — the tool layer that lets AI systems act on real data and services.",
+      "href": "studio/",
+      "page": "studio"
+    },
+    {
+      "id": "upd-2026-07-cognivus",
+      "date": "2026-07-22",
+      "kind": "app",
+      "title": "Cognivus Labs clinical monitoring track",
+      "summary": "Owned the AI/ML path for real-time ECG abnormality detection, SpO2 deterioration forecasting, and explainable multi-biomarker risk scoring.",
+      "href": "apps/",
+      "page": "apps"
+    },
+    {
+      "id": "upd-2026-06-mcp",
+      "date": "2026-06-30",
+      "kind": "learn",
+      "title": "MCP tool-calling patterns in production",
+      "summary": "Journaled how Model Context Protocol servers should expose safe, typed tools instead of dumping raw APIs into a prompt.",
+      "href": "learning/",
+      "page": "learning"
+    },
+    {
+      "id": "upd-2026-05-cert-mongo",
+      "date": "2026-05-14",
+      "kind": "credential",
+      "title": "AI and Vector Search — MongoDB",
+      "summary": "Completed practical training on embedding pipelines and vector retrieval for AI-assisted search.",
+      "href": "credentials/",
+      "page": "credentials"
+    },
+    {
+      "id": "upd-2026-04-intellihack",
+      "date": "2026-04-09",
+      "kind": "milestone",
+      "title": "IntelliHack 5.0 — Top 10 of 350+",
+      "summary": "Team OutlierRejects reached the finals with a predictive solution. Pitch notes live in the credentials archive.",
+      "href": "credentials/",
+      "page": "credentials"
+    },
+    {
+      "id": "upd-2026-03-repodigest",
+      "date": "2026-03-12",
+      "kind": "app",
+      "title": "RepoDigest shipped",
+      "summary": "LangGraph + GenAI app that reads repositories and returns structured analysis instead of a wall of tokens.",
+      "href": "apps/",
+      "page": "apps"
+    },
+    {
+      "id": "upd-2026-02-audit",
+      "date": "2026-02-20",
+      "kind": "app",
+      "title": "AI-powered website audit tool",
+      "summary": "FastAPI service that scores a page on measurable facts, then asks an LLM only for the recommendation layer.",
+      "href": "apps/",
+      "page": "apps"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "LinkedIn Notes",
+  "lede": "Public writing from the same desk. Each card is a field note you can open on LinkedIn.",
+  "profile": "https://www.linkedin.com/in/rivindu-ashinsa/",
+  "items": [
+    {
+      "id": "li-cognivus-ml",
+      "date": "2026-07-24",
+      "title": "What “real-time healthcare AI” actually means on a wearable patch",
+      "excerpt": "Streaming ECG and SpO2 is the easy sentence. The hard part is the pipeline: denoise on-device, keep latency honest, and return a risk score a clinician can challenge — not a black box.",
+      "tags": ["Healthcare AI", "ECG", "MLOps"],
+      "href": "https://www.linkedin.com/in/rivindu-ashinsa/",
+      "image": "assets/images/projects/cognivuslabs/wearable patch.jpeg",
+      "imageAlt": "Cognivus Labs wearable patch used for ECG and SpO2 sensing",
+      "width": 1008,
+      "height": 1070
+    },
+    {
+      "id": "li-mcp",
+      "date": "2026-08-20",
+      "title": "MCP servers are just APIs with manners",
+      "excerpt": "If a model can call tools, the tool schema is the product. Typed inputs, tight auth, and boring errors beat a clever prompt every time. That is the intern work I am doing at Zelora.",
+      "tags": ["MCP", "AI Engineering", "Tooling"],
+      "href": "https://www.linkedin.com/in/rivindu-ashinsa/",
+      "image": "assets/images/projects/webanalyser/webanalyser.png",
+      "imageAlt": "Interface of an AI tooling product with structured outputs",
+      "width": 1376,
+      "height": 768
+    },
+    {
+      "id": "li-intellihack",
+      "date": "2026-04-10",
+      "title": "IntelliHack 5.0: ten teams left, 350+ started",
+      "excerpt": "OutlierRejects made the finals. The lesson I kept: a model that you can explain to a judge in 90 seconds usually beats a model you can only defend in a notebook.",
+      "tags": ["Hackathon", "IEEE UCSC", "Predictive Analytics"],
+      "href": "https://www.linkedin.com/in/rivindu-ashinsa/",
+      "image": "assets/images/achievements/intellihackAch.jfif",
+      "imageAlt": "IntelliHack 5.0 team OutlierRejects at the finals",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "id": "li-vector",
+      "date": "2026-05-16",
+      "title": "Vector search is not magic. It is a data contract.",
+      "excerpt": "Finished MongoDB’s AI and Vector Search path. Embeddings only help if the chunking, metadata, and evaluation set are treated as first-class artifacts — same as any other dataset.",
+      "tags": ["Vector Search", "MongoDB", "RAG"],
+      "href": "https://www.linkedin.com/in/rivindu-ashinsa/",
+      "image": "assets/images/certificates/AI and vector search.jpg",
+      "imageAlt": "MongoDB AI and Vector Search certificate awarded to Rivindu Ashinsa",
+      "width": 2475,
+      "height": 1915
+    },
+    {
+      "id": "li-hult",
+      "date": "2026-03-28",
+      "title": "Pitching Cognivus Labs at Hult Prize",
+      "excerpt": "A clinical monitoring platform has to sound like a product, not a research poster. The qualifier forced the story into one sentence: live waveforms in, decisions a doctor can act on out.",
+      "tags": ["Startups", "Cognivus Labs", "Hult Prize"],
+      "href": "https://www.linkedin.com/in/rivindu-ashinsa/",
+      "image": "assets/images/achievements/hultPrice.jpeg",
+      "imageAlt": "Cognivus Labs team pitching at the Hult Prize qualifier",
+      "width": 1500,
+      "height": 1000
+    }
+  ]
+}
